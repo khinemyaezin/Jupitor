@@ -1,0 +1,25 @@
+.quill-editor {
+    line-height: inherit !important;
+    .ql-toolbar {
+        border-bottom: 1px solid #ced4da;
+        &.ql-snow {
+            text-align: left !important;
+        }
+    }
+    .ql-toolbar,
+    .ql-container {
+        font-family: var($font-family-sans-serif) !important;
+        font-size: var($font-size-base) !important;
+        //border: none !important;
+    }
+    .ql-container {
+        border: none;
+    }
+    .ql-container {
+        min-height: 10rem;
+    }
+}
+.ql-snow .ql-editor blockquote {
+    border: none;
+    //border-color: $primary;
+}

@@ -1,0 +1,68 @@
+/*===== colors =====*/
+.bg-default {
+    background-color: $bg-default;
+}
+/*===== navitem =====*/
+.nav-item {
+    .nav-link {
+        transition: none !important;
+    }
+}
+/*===== card =====*/
+.card {
+    border: none;
+    border-radius: 8px;
+    box-shadow: $box-shadow;
+    box-sizing: border-box;
+    .card-footer,
+    .card-header {
+        background-color: transparent;
+        border: none;
+        .card-title {
+            text-transform: uppercase;
+        }
+    }
+
+    .card-footer {
+        text-transform: unset;
+    }
+    .card-header {
+        padding: 1.5rem 1.5rem 0.5rem 1.5rem;
+    }
+    .card-body {
+        padding: 1.5rem;
+    }
+    .card-footer {
+        padding: 0.5rem 1.5rem 1.5rem 1.5rem;
+    }
+}
+/*===== list group =====*/
+.list-group-item {
+    background-color: transparent;
+}
+
+/*===== buttons =====*/
+
+/*===== collapse =====*/
+.collapsing {
+  visibility: hidden;
+}
+
+@media (min-width: 576px) {
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+}
+
+// X-Large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+}
+
+// XX-Large devices (larger desktops, 1400px and up)
+@media (min-width: 1400px) {
+}

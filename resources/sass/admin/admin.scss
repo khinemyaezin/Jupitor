@@ -1,0 +1,28 @@
+.navbar-absolute-top {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+.navbar {
+    display: block;
+    z-index: 99;
+}
+.navbar-expand {
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+}
+@media (min-width: 992px) {
+    .min-vh-lg-100 {
+        min-height: 100vh !important;
+    }
+}
+@media (min-width: 992px) {
+    .d-lg-flex {
+        display: -ms-flexbox !important;
+        display: flex !important;
+    }
+}
+
