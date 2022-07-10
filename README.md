@@ -5,7 +5,7 @@ change your database name and username and password in env file
 
 ### Admin 
 
-1. Headlines Management
+1. Articles Management
 2. Quotation Management
 
 ### Main 
