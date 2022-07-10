@@ -3,12 +3,12 @@ change your database name and username and password in env file
 
 ## Features include in this project
 
-### Admin panel 
+### Admin 
 
 1. Headlines Management
 2. Quotation Management
 
-### Customer panel 
+### Main 
 
 1. home page
 2. group by headline types such as about, services, news etc.
