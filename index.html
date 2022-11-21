@@ -1,0 +1,224 @@
+<!doctype html>
+<html lang="en" version="1.0">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CSRF Token -->
+    <meta name="csrf-token" content="OOIv20o6fblIkvhlhXQ5Mdcihe7hOCmbGWw7AVtO">
+
+    <title>Jupitor</title>
+
+    <!-- Scripts -->
+    <script src="js/app.js" defer></script>
+
+    <!-- Fonts -->
+    <link rel="dns-prefetch" href="//fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+
+    <!-- Styles -->
+    <link href="css/app.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <header class="header-outer header header-transparent">
+        <div class="container">
+            <nav class="header-inner">
+                <div class="header-navigation-left d-flex justify-content-center w-sm-100 w-md-auto">
+                    <button class="btn btn-link d-md-none  btn-offcanvas-dismiss" type="button"
+                        data-bs-toggle="offcanvas" data-bs-target="#offcanvas" aria-expanded="false">
+                        <i class="bi bi-list fs-2"></i>
+                    </button>
+                    <a class="header-logo" href="index.html">
+                        <img id="brand-logo" src="storage/images/9q7bg5VidEvwHLdGDYlOBZX1Xy8ARNgrRFHSP8Oi.png"
+                            onerror="document.getElementById('brand-logo').src = 'storage/essential/err_logo.png' " />
+                    </a>
+                </div>
+                <div class="header-navigation offcanvas offcanvas-start" id="offcanvas">
+                    <div class="offcanvas-header d-md-none justify-content-end">
+                        <button type="button" class="btn " data-bs-dismiss="offcanvas" style="color: white"
+                            aria-label="Close">
+                            <i class="bi bi-x-lg fs-2"></i>
+
+                        </button>
+                    </div>
+                    <a href="index.html" class="header-item text-capitalize">Home</a>
+                    <a href="about.html" class="header-item text-capitalize">About Us</a>
+                    <a href="services.html" class="header-item text-capitalize">Services</a>
+                    <a href="gallery.html" class="header-item text-capitalize">Gallery</a>
+                    <a href="contact.html" class="header-item text-capitalize">Contact Us</a>
+                    <div class="dropdown header-item">
+                        <a class="dropdown-toggle text-decoration-none" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false" v-pre>
+                            Admin
+                        </a>
+
+                        <div class="dropdown-menu dropdown-menu-end dropdown-menu-dark"
+                            aria-labelledby="navbarDropdown">
+
+                            <a class="dropdown-item" href="login.html">Login</a>
+                            <a class="dropdown-item" href="headline.html">Headlines</a>
+
+                            <form id="logout-form" action="logout" method="POST" class="d-none">
+                                <input type="hidden" name="_token" value="OOIv20o6fblIkvhlhXQ5Mdcihe7hOCmbGWw7AVtO">
+                            </form>
+                        </div>
+                    </div>
+
+
+                </div>
+
+            </nav>
+
+        </div>
+    </header>
+    <main>
+        <div id="main-slider" class="carousel slide " data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#main-slider" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#main-slider" data-bs-slide-to="1" class="active"
+                    aria-current="true" aria-label="Slide 2"></button>
+
+            </div>
+            <div class="carousel-inner ">
+                <div class="carousel-item active">
+                    <img src="storage/images\CpV2J0DTLxu2zfTzolEyHvTm9Re0N9SZgSd1LprG.jpg" class="d-block w-100"
+                        alt="...">
+                    <div class="carousel-caption d-none d-md-block text-end">
+                        <h5 class="text-white"><a class="text-reset" href="#">Lets join our team</a></h5>
+                        <p>We provide everything you might need.</p>
+                    </div>
+                </div>
+                <div class="carousel-item ">
+                    <img src="storage/images\4gW0D679R5jueArRUkdowGKlgKAd2i2sjyiloHB3.webp" class="d-block w-100"
+                        alt="...">
+                    <div class="carousel-caption d-none d-md-block text-end">
+                        <h5 class="text-white"><a class="text-reset" href="#">Grate place</a></h5>
+                        <p>Work life balance company</p>
+                    </div>
+                </div>
+            </div>
+            <div class="d-md-block company-label text-white text-start w-100 container">
+                <div class="w-md-75 w-sm-auto">
+                    <div class="d-table w-100">
+                        <div class="d-table-cell text-left">
+
+                            <h1 class="fw-bold mb-3 display-4" data-aos="fade-up" data-aos-duration="1000">
+                                JUPITOR</h1>
+                            <h3 class="mb-4  text-wrap" data-aos="fade-up" data-aos-duration="2000">
+                                <span class="typewrite-v2 blinker anim-typewriter text-wrap"></span>
+                            </h3>
+                            <a href="contact.html" class="btn btn-light btn-point" data-aos="fade-up"
+                                data-aos-duration="3000">
+                                <span>Contact us</span>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+        <div class="headlines"></div>
+    </main>
+    <footer class="footer text-white py-5">
+        <div class="container ">
+            <div class="row g-3">
+                <div class="col-sm-12 col-md-6 col-lg-4">
+                    <div class="d-table-cell text-left small">
+                        <h5 class="mb-4 fw-bold">Daniel Matthew</h5>
+                        <ul class="list-unstyled">
+
+                            <li class="mb-3 d-flex justify-content-start gap-3">
+                                <i class="bi bi-geo-alt-fill"></i>
+
+                                <div class="ms-2">
+                                    <span>Robert Robertson, 1234 NW Bobcat Lane, St. Robert, MO 65584-5678.</span>
+                                </div>
+                            </li>
+
+                            <li class="mb-3 d-flex justify-content-start gap-3">
+                                <i class="bi bi-telephone-fill"></i>
+                                <div class="ms-2">
+                                    <a href="tel:09 799887722" class="text-decoration-none text-white">09 799887722</a>
+                                    <span class="d-block text-muted text-small">Sun - Sat</span>
+                                    <span class="d-block text-muted text-small">9:30 am - 6:15 pm</span>
+                                </div>
+                            </li>
+
+                            <li class="mb-3 d-flex justify-content-start gap-3">
+                                <i class="bi bi-envelope-fill"></i>
+                                <div class="ms-2">
+                                    <a class="text-decoration-none text-white"
+                                        href="mailto:matthew@coolstuff.com">matthew@coolstuff.com</a>
+                                </div>
+                            </li>
+
+                            <li class="mb-3 d-flex justify-content-start gap-3 fs-5 ">
+                                <a class="bi bi-linkedin text-white text-decoration-none" href="#"></a>
+                                <a class="bi bi-facebook text-white text-decoration-none" href="#"></a>
+                                <a class="bi bi-instagram text-white text-decoration-none" href="#"></a>
+
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-4">
+                    <div class="quick-link">
+                        <h6>Quick LInks</h6>
+                        <ul class="nav flex-column px-0">
+                            <li class="nav-item "><a class="nav-link text-decoration-none small py-1 text-white"
+                                    href="index.html">Home</a></li>
+                            <li class="nav-item "><a class="nav-link text-decoration-none small py-1 text-white"
+                                    href="about.html">About Us</a></li>
+                            <li class="nav-item "><a class="nav-link text-decoration-none small py-1 text-white"
+                                    href="services.html">Services</a>
+                            </li>
+                            <li class="nav-item "><a class="nav-link text-decoration-none small py-1 text-white"
+                                    href="gallery.html">Gallery</a>
+                            </li>
+                            <li class="nav-item "><a class="nav-link text-decoration-none small py-1 text-white"
+                                    href="contact.html">Contact Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-lg-4">
+                    <div class="bg-transparent ps-lg-5">
+                        <div class="h6 mb-3">Subscribe to our newsletter to receive exclusive offers.</div>
+                        <div class="">
+                            <input type="text" class="form-control mb-3">
+                            <button class="btn btn-primary">Submit</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="row justify-content-start">
+                <div class="col col-md-auto">
+                    <small class="text-muted">Copyright &copy;
+                        <script>document.write(new Date().getFullYear());</script> All Rights Reserved by <strong><a
+                                href="/" class="text-decoration-none text-muted">Daniel Matthew</a></strong>
+                    </small>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script type="text/javascript">
+        let groups = { "success": null, "code": null, "message": null, "errorMessage": null, "error": null, "data": null, "list": [{ "id": 1, "status": 2, "biz_status": 2, "order": 1, "title": "Introduction", "has_title": false, "highlight": "{\"ops\":[{\"insert\":\"About Us\"},{\"attributes\":{\"header\":2},\"insert\":\"\\n\"}]}", "fk_group_theme_id": 10, "fk_type_id": 3, "on_navbar": false, "on_home": true, "dropdown_on_navbar": false, "show_all": true, "max_items": 0, "image_url": "storage\/images\/6MP25PobdnmO73Fm0dUijPn8OrI2CPVCtZBWVCdB.jpg", "created_at": "2022-03-30T06:55:24.000000Z", "updated_at": "2022-08-02T15:56:14.000000Z", "html": null, "articles": [{ "id": 1, "status": 2, "biz_status": 2, "title": "about us", "has_title": true, "detail": "{\"ops\":[{\"insert\":\"\\n\"}]}", "body": "{\"ops\":[{\"attributes\":{\"background\":\"transparent\",\"bold\":true},\"insert\":\"What Is Cable Detection?\"},{\"attributes\":{\"header\":2},\"insert\":\"\\n\"},{\"insert\":\"\\nUnderground cables are one of the things that enable telecommunication and power transmission. They are especially beneficial to densely populated areas, particularly those locations where overhead cable posts are unavailable or are not ideal.\\n\\nLocating underground cables\u2014as well as other underground facilities\u2014is an integral pre-excavation process mandated by laws and guided by a number of industry standards.[4] During excavations, underground cables become at risk of getting damaged. In fact, utility strikes are a common occurrence on construction sites, resulting in compromised worker and public safety, repair costs, and work delay, among others.\\n\\nBased on the 2018 Damage Information Reporting Tool (DIRT) Report of the Common Ground Alliance (CGA), some of the most common root causes of utility strikes include failure to call 811 before digging, improper excavation practices, and inaccurate marking of underground facilities.\\n\"}]}", "image_url": "storage\/images\/D1ypJkADDK0WffAMaaNh8fBW9e27fuUze5ScRxQ0.jpg", "fk_group_id": 1, "fk_theme_id": 2, "detail_title": null, "detail_image_url": null, "order": 1, "btn_detail": false, "created_at": "2022-03-30T06:55:24.000000Z", "updated_at": "2022-08-02T15:55:51.000000Z", "theme": { "id": 2, "status": 2, "biz_status": 2, "title": "image_left", "tree": 2, "body": "\u003Cdiv class=\"article bg-transparent col-12 shadow-none\"\u003E   \u003Cdiv class=\"row g-0\"\u003E     \u003Cdiv class=\"col-sm-12 col-md-6 text-center\" data-aos-once=\"true\" data-aos=\"fade-right\"\u003E       \u003Cdiv class=\"md-image py-2\"\u003E\u003Cimg class=\"rounded\"\u003E\u003C\/div\u003E     \u003C\/div\u003E     \u003Cdiv class=\"col-sm col-md-6 align-self-center\" data-aos-once=\"true\" data-aos=\"fade-left\"\u003E       \u003Cdiv class=\"theme-content card-body px-sm-0 px-md-3 px-lg-5 \"\u003E\u003C\/div\u003E       \u003Cdiv class=\"px-sm-0 px-md-3 px-lg-5 d-flex\"\u003E \u003Ca class=\"btn btn-light btn-point btn-detail\"\u003E\u003Cspan\u003EView More\u003C\/span\u003E\u003C\/a\u003E \u003C\/div\u003E     \u003C\/div\u003E   \u003C\/div\u003E \u003C\/div\u003E", "max_articles": 30, "image_type": "src", "created_at": "2022-03-02T15:47:41.000000Z", "updated_at": "2022-03-30T07:22:37.000000Z" } }, { "id": 7, "status": 2, "biz_status": 2, "title": "Online Pipe promise prompt", "has_title": true, "detail": "{\"ops\":[{\"insert\":\"\\n\"}]}", "body": "{\"ops\":[{\"insert\":\"Different cable locators employ different methods to function. The two known methods, made possible through naturally present (active) or naturally produced signals (passive) via a transmitter,[7] are called the Active Utility Detection and Passive Utility Detection.\\n\\nIt\u2019s important to note, however, that while both methods can help locators distinguish an underground utility, they do not confirm its presence nor its absolute location. Furthermore, an unmarked ground is not a guarantee that there are no utilities underground\\n\"}]}", "image_url": "storage\/images\/sTjaUI4UOjodO8mDEyJS7x5FltlIis5uwhHmJbCD.webp", "fk_group_id": 1, "fk_theme_id": 3, "detail_title": null, "detail_image_url": null, "order": 2, "btn_detail": false, "created_at": "2022-04-02T06:57:28.000000Z", "updated_at": "2022-08-02T15:56:14.000000Z", "theme": { "id": 3, "status": 2, "biz_status": 2, "title": "image_right", "tree": 2, "body": "\u003Cdiv class=\"article bg-transparent col-12 shadow-none\"\u003E   \u003Cdiv class=\"row g-0\"\u003E     \u003Cdiv class=\"col-sm col-md-6 align-self-center\" data-aos-once=\"true\" data-aos=\"fade-right\"\u003E       \u003Cdiv class=\"theme-content card-body  px-sm-0 px-md-3 px-lg-5\"\u003E\u003C\/div\u003E       \u003Cdiv class=\"d-flex card-body\"\u003E \u003Ca class=\"btn btn-light btn-point btn-detail\"\u003E \u003Cspan\u003EView More\u003C\/span\u003E \u003C\/a\u003E \u003C\/div\u003E     \u003C\/div\u003E     \u003Cdiv class=\"col-sm-12 col-md-6 text-center\" data-aos-once=\"true\" data-aos=\"fade-left\"\u003E       \u003Cdiv class=\"md-image py-2\"\u003E \u003Cimg class=\"rounded\" alt=\"...\"\u003E \u003C\/div\u003E     \u003C\/div\u003E   \u003C\/div\u003E \u003C\/div\u003E", "max_articles": 30, "image_type": "src", "created_at": "2022-03-02T15:47:41.000000Z", "updated_at": "2022-04-02T06:59:25.000000Z" } }], "type": { "id": 3, "status": 2, "biz_status": 2, "code": "intro", "title": "Introduction", "allow_detail": true, "allow_body": true, "is_unique": false, "allow_pagination": true, "created_at": "2022-04-02T07:10:07.000000Z", "updated_at": "2022-04-02T07:10:07.000000Z", "body": null }, "theme": null, "group_theme": { "id": 10, "status": 2, "biz_status": 2, "title": "single", "tree": 1, "body": "\u003Csection class=\"headline\"\u003E   \u003Cdiv class=\"container\"\u003E     \u003Cdiv class=\"row justify-content-center group-container\"\u003E       \u003Cdiv class=\"col-lg-6 col-md-8 col-sm-10 text-center\"\u003E         \u003Cdiv class=\"text-muted mb-5 pb-2 group-content\"\u003E \u003C\/div\u003E       \u003C\/div\u003E     \u003C\/div\u003E     \u003Cdiv class=\"group-contents\"\u003E\u003C\/div\u003E   \u003C\/div\u003E \u003C\/section\u003E", "max_articles": 30, "image_type": "src", "created_at": "2022-03-03T22:30:38.000000Z", "updated_at": "2022-04-02T16:06:15.000000Z" } }] };
+        let forehead = { "success": true, "code": 200, "message": "Success", "errorMessage": null, "error": null, "data": { "id": 1, "title": "JUPITOR", "body": "Understanding Business Needs", "created_at": "2022-03-30T09:51:32.000000Z", "updated_at": "2022-08-02T15:42:47.000000Z", "carousels": [{ "id": 8, "title": "Lets join our team", "body": "We provide everything you might need.", "fk_forehead_id": 1, "order": 1, "image_url": "images\\CpV2J0DTLxu2zfTzolEyHvTm9Re0N9SZgSd1LprG.jpg", "fk_group_id": 16, "created_at": "2022-08-02T16:00:31.000000Z", "updated_at": "2022-08-02T16:00:31.000000Z" }, { "id": 5, "title": "Grate place", "body": "Work life balance company", "fk_forehead_id": 1, "order": 5, "image_url": "images\\4gW0D679R5jueArRUkdowGKlgKAd2i2sjyiloHB3.webp", "fk_group_id": 2, "created_at": "2022-04-22T10:17:42.000000Z", "updated_at": "2022-08-02T10:39:24.000000Z" }] }, "list": [] };
+        document.addEventListener("DOMContentLoaded", function (event) {
+            for (let g of groups.list) {
+                $('.headlines').append(ThemeBuilder.export(new Theme(g, g.type, g.group_theme, g.articles)))
+            }
+            Utility.textTypeV2(document.querySelector(".typewrite-v2"), [forehead.data.body]);
+
+
+        });
+    </script>
+</body>
+
+</html>

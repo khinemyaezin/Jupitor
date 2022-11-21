@@ -1,0 +1,205 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CSRF Token -->
+    <meta name="csrf-token" content="OOIv20o6fblIkvhlhXQ5Mdcihe7hOCmbGWw7AVtO">
+
+    <title>Laravel</title>
+
+    <!-- Scripts -->
+    <script src="js/app.js" defer></script>
+
+    <!-- Fonts -->
+    <link rel="dns-prefetch" href="//fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+
+    <!-- Styles -->
+    <link href="css/app.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <style>
+        .header.header-transparent {
+            background-color: rgba(22, 28, 45, 0.9);
+        }
+    </style>
+    <header class="header-outer header header-transparent">
+        <div class="container">
+            <nav class="header-inner">
+                <div class="header-navigation-left d-flex justify-content-center w-sm-100 w-md-auto">
+                    <button class="btn btn-link d-md-none  btn-offcanvas-dismiss" type="button"
+                        data-bs-toggle="offcanvas" data-bs-target="#offcanvas" aria-expanded="false">
+                        <i class="bi bi-list fs-2"></i>
+                    </button>
+                    <a class="header-logo" href="index.html">
+                        <img id="brand-logo" src="storage/images/9q7bg5VidEvwHLdGDYlOBZX1Xy8ARNgrRFHSP8Oi.png"
+                            onerror="document.getElementById('brand-logo').src = 'storage/essential/err_logo.png' " />
+                    </a>
+                </div>
+                <div class="header-navigation offcanvas offcanvas-start" id="offcanvas">
+                    <div class="offcanvas-header d-md-none justify-content-end">
+                        <button type="button" class="btn " data-bs-dismiss="offcanvas" style="color: white"
+                            aria-label="Close">
+                            <i class="bi bi-x-lg fs-2"></i>
+
+                        </button>
+                    </div>
+                    <a href="index.html" class="header-item text-capitalize">Home</a>
+                    <a href="about.html" class="header-item text-capitalize">About Us</a>
+                    <a href="services.html" class="header-item text-capitalize">Services</a>
+                    <a href="gallery.html" class="header-item text-capitalize">Gallery</a>
+                    <a href="contact.html" class="header-item text-capitalize">Contact Us</a>
+                    <div class="dropdown header-item">
+                        <!-- <a class="dropdown-toggle text-decoration-none" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false" v-pre>
+                            admin
+                        </a> -->
+
+                        <div class="dropdown-menu dropdown-menu-end dropdown-menu-dark"
+                            aria-labelledby="navbarDropdown">
+
+                            <a class="dropdown-item" href="admin">Dashboard</a>
+
+                            <a class="dropdown-item" href="logout"
+                                onclick="event.preventDefault();document.getElementById('logout-form').submit();">
+                                Logout
+                            </a>
+
+                            <form id="logout-form" action="logout" method="POST" class="d-none">
+                                <input type="hidden" name="_token" value="OOIv20o6fblIkvhlhXQ5Mdcihe7hOCmbGWw7AVtO">
+                            </form>
+                        </div>
+                    </div>
+
+
+                </div>
+
+            </nav>
+
+        </div>
+    </header>
+    <main>
+        <div style="position: relative">
+            <div class="jarallax bg-gradient pt-5 pb-6 pt-md-7">
+                <img class="jarallax-img" src="storage/essential/contact_us_bgcover.jpg">
+                <span class="position-absolute top-0 start-0 w-100 h-100"
+                    style="background-image: linear-gradient(to right, #1b2a4e 0%, #1b2a4e 30%, #1b2a4e 100%); opacity:0.8"></span>
+                <section>
+                    <div class="wave wave1"></div>
+                    <div class="wave wave2"></div>
+                    <div class="wave wave3"></div>
+                    <div class="wave wave4"></div>
+                </section>
+                <div class="container position-relative pt-6">
+                    <div class="row justify-content-center">
+                        <div class="col">
+                            <h1 class="text-light mb-4">About Us</h1>
+                            <p class="text-light">Get in touch with by completing the below form or call us now</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="headlines mn-vh-100"></div>
+
+    </main>
+    <footer class="footer text-white py-5">
+        <div class="container ">
+            <div class="row g-3">
+                <div class="col-sm-12 col-md-6 col-lg-4">
+                    <div class="d-table-cell text-left small">
+                        <h5 class="mb-4 fw-bold">Daniel Matthew</h5>
+                        <ul class="list-unstyled">
+
+                            <li class="mb-3 d-flex justify-content-start gap-3">
+                                <i class="bi bi-geo-alt-fill"></i>
+
+                                <div class="ms-2">
+                                    <span>Robert Robertson, 1234 NW Bobcat Lane, St. Robert, MO 65584-5678.</span>
+                                </div>
+                            </li>
+
+                            <li class="mb-3 d-flex justify-content-start gap-3">
+                                <i class="bi bi-telephone-fill"></i>
+                                <div class="ms-2">
+                                    <a href="tel:09 799887722" class="text-decoration-none text-white">09 799887722</a>
+                                    <span class="d-block text-muted text-small">Sun - Sat</span>
+                                    <span class="d-block text-muted text-small">9:30 am - 6:15 pm</span>
+                                </div>
+                            </li>
+
+                            <li class="mb-3 d-flex justify-content-start gap-3">
+                                <i class="bi bi-envelope-fill"></i>
+                                <div class="ms-2">
+                                    <a class="text-decoration-none text-white"
+                                        href="mailto:matthew@coolstuff.com">matthew@coolstuff.com</a>
+                                </div>
+                            </li>
+
+                            <li class="mb-3 d-flex justify-content-start gap-3 fs-5 ">
+                                <a class="bi bi-linkedin text-white text-decoration-none" href="#"></a>
+                                <a class="bi bi-facebook text-white text-decoration-none" href="#"></a>
+                                <a class="bi bi-instagram text-white text-decoration-none" href="#"></a>
+
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-4">
+                    <div class="quick-link">
+                        <h6>Quick LInks</h6>
+                        <ul class="nav flex-column px-0">
+                            <li class="nav-item "><a class="nav-link text-decoration-none small py-1 text-white"
+                                    href="index.html">Home</a></li>
+                            <li class="nav-item "><a class="nav-link text-decoration-none small py-1 text-white"
+                                    href="about.html">About Us</a></li>
+                            <li class="nav-item "><a class="nav-link text-decoration-none small py-1 text-white"
+                                    href="services.html">Services</a>
+                            </li>
+                            <li class="nav-item "><a class="nav-link text-decoration-none small py-1 text-white"
+                                    href="gallery.html">Gallery</a>
+                            </li>
+                            <li class="nav-item "><a class="nav-link text-decoration-none small py-1 text-white"
+                                    href="contact.html">Contact Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-lg-4">
+                    <div class="bg-transparent ps-lg-5">
+                        <div class="h6 mb-3">Subscribe to our newsletter to receive exclusive offers.</div>
+                        <div class="">
+                            <input type="text" class="form-control mb-3">
+                            <button class="btn btn-primary">Submit</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="row justify-content-start">
+                <div class="col col-md-auto">
+                    <small class="text-muted">Copyright &copy;
+                        <script>document.write(new Date().getFullYear());</script> All Rights Reserved by <strong><a
+                                href="/" class="text-decoration-none text-muted">Daniel Matthew</a></strong>
+                    </small>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script type="text/javascript">
+        let groups = [{ "id": 4, "status": 2, "biz_status": 2, "order": 3, "title": "About Us", "has_title": true, "highlight": "{\"ops\":[{\"insert\":\"\\n\"}]}", "fk_group_theme_id": 8, "fk_type_id": 1, "on_navbar": false, "on_home": false, "dropdown_on_navbar": false, "show_all": true, "max_items": 0, "image_url": null, "created_at": "2022-04-02T07:12:26.000000Z", "updated_at": "2022-08-02T15:21:50.000000Z", "html": null, "articlesCount": 1, "articles": [{ "id": 13, "status": 2, "biz_status": 2, "title": "About Us", "has_title": true, "detail": "{\"ops\":[{\"insert\":\"\\n\"}]}", "body": "{\"ops\":[{\"attributes\":{\"bold\":true},\"insert\":\"About Us\"},{\"attributes\":{\"header\":1},\"insert\":\"\\n\"},{\"insert\":\"\\nWe are a local team of dedicated full-time Cable Detection Specialists. Training and\u00a0\"},{\"attributes\":{\"background\":\"rgba(0, 0, 0, 0)\"},\"insert\":\"regulatory standards are kept up-to-date with all our associates. Each specialist is equipped with the knowledge\u00a0and skill in performing underground cable detection through set procedures and cable locating techniques with\u00a0our in-house training and apprenticeship.\"},{\"insert\":\"\\n\\n\"}]}", "image_url": "storage\/images\/0tBPauyoAo5SySiomGcNN5BGsjgsjfrVMvZplKjC.jpg", "fk_group_id": 4, "fk_theme_id": 3, "detail_title": null, "detail_image_url": null, "order": 1, "btn_detail": false, "created_at": "2022-04-02T07:12:26.000000Z", "updated_at": "2022-08-02T15:21:50.000000Z", "theme": { "id": 3, "status": 2, "biz_status": 2, "title": "image_right", "tree": 2, "body": "\u003Cdiv class=\"article bg-transparent col-12 shadow-none\"\u003E   \u003Cdiv class=\"row g-0\"\u003E     \u003Cdiv class=\"col-sm col-md-6 align-self-center\" data-aos-once=\"true\" data-aos=\"fade-right\"\u003E       \u003Cdiv class=\"theme-content card-body  px-sm-0 px-md-3 px-lg-5\"\u003E\u003C\/div\u003E       \u003Cdiv class=\"d-flex card-body\"\u003E \u003Ca class=\"btn btn-light btn-point btn-detail\"\u003E \u003Cspan\u003EView More\u003C\/span\u003E \u003C\/a\u003E \u003C\/div\u003E     \u003C\/div\u003E     \u003Cdiv class=\"col-sm-12 col-md-6 text-center\" data-aos-once=\"true\" data-aos=\"fade-left\"\u003E       \u003Cdiv class=\"md-image py-2\"\u003E \u003Cimg class=\"rounded\" alt=\"...\"\u003E \u003C\/div\u003E     \u003C\/div\u003E   \u003C\/div\u003E \u003C\/div\u003E", "max_articles": 30, "image_type": "src", "created_at": "2022-03-02T15:47:41.000000Z", "updated_at": "2022-04-02T06:59:25.000000Z" } }], "type": { "id": 1, "status": 2, "biz_status": 2, "code": "about", "title": "about", "allow_detail": true, "allow_body": true, "is_unique": false, "allow_pagination": true, "created_at": "2022-03-30T06:54:49.000000Z", "updated_at": "2022-04-09T16:27:56.000000Z", "body": "Get in touch with by completing the below form or call us now" }, "theme": null, "group_theme": { "id": 8, "status": 2, "biz_status": 2, "title": "clean", "tree": 1, "body": "\u003Csection class=\"headline\"\u003E   \u003Cdiv class=\"container\"\u003E     \u003Cdiv class=\"group-contents\"\u003E\u003C\/div\u003E   \u003C\/div\u003E \u003C\/section\u003E", "max_articles": 30, "image_type": "src", "created_at": "2022-03-02T21:13:15.000000Z", "updated_at": "2022-03-27T08:08:05.000000Z" } }, { "id": 12, "status": 2, "biz_status": 2, "order": 4, "title": "Our Values", "has_title": true, "highlight": "{\"ops\":[{\"insert\":\"Our Values\"},{\"attributes\":{\"header\":2},\"insert\":\"\\n\"},{\"insert\":\"We take pride in upholding these values in every project we take on.\\n\"}]}", "fk_group_theme_id": 36, "fk_type_id": 1, "on_navbar": false, "on_home": false, "dropdown_on_navbar": false, "show_all": true, "max_items": 0, "image_url": null, "created_at": "2022-04-07T04:03:12.000000Z", "updated_at": "2022-08-02T15:23:24.000000Z", "html": null, "articlesCount": 4, "articles": [{ "id": 32, "status": 2, "biz_status": 2, "title": "Integrity", "has_title": true, "detail": "{\"ops\":[{\"insert\":\"\\n\"}]}", "body": "{\"ops\":[{\"insert\":\"We foster trust with our clients by working with values.\\n\"}]}", "image_url": "storage\/images\/lKaEZ5EurBdEHHYqhzP7ov3eQOb9jJ2V7NGszsia.png", "fk_group_id": 12, "fk_theme_id": 38, "detail_title": null, "detail_image_url": null, "order": 1, "btn_detail": false, "created_at": "2022-04-07T04:03:12.000000Z", "updated_at": "2022-08-02T15:23:24.000000Z", "theme": { "id": 38, "status": 2, "biz_status": 2, "title": "Feature Png (60*60)", "tree": 2, "body": "\u003Cdiv class=\"col-sm-6 col-md-4\"\u003E   \u003Cdiv class=\"feature-box h-100 icon-grad\"\u003E     \u003Cdiv class=\"feature-box-icon\"\u003E       \u003Cimg src=\"\" alt=\"\" style=\"height:60px;width:60px\"\u003E     \u003C\/div\u003E     \u003Cdiv\u003E       \u003Ch5 class=\"article-title\"\u003E\u003C\/h5\u003E       \u003Cdiv class=\"theme-content\"\u003E \u003C\/div\u003E     \u003C\/div\u003E   \u003C\/div\u003E \u003C\/div\u003E", "max_articles": 1, "image_type": "src", "created_at": "2022-04-07T04:15:35.000000Z", "updated_at": "2022-04-22T06:13:56.000000Z" } }, { "id": 33, "status": 2, "biz_status": 2, "title": "Responsiveness", "has_title": true, "detail": "{\"ops\":[{\"insert\":\"\\n\"}]}", "body": "{\"ops\":[{\"insert\":\"We strive to meet and exceed clients\u2019 expectations and service delivery. We act with a sense of urgency in all our dealings.\\n\"}]}", "image_url": "storage\/images\/Zdps0d5POC2f49NLF1nMAZZjXlUJIgxpskLnsPXp.png", "fk_group_id": 12, "fk_theme_id": 38, "detail_title": null, "detail_image_url": null, "order": 2, "btn_detail": false, "created_at": "2022-04-07T04:21:21.000000Z", "updated_at": "2022-08-02T10:45:34.000000Z", "theme": { "id": 38, "status": 2, "biz_status": 2, "title": "Feature Png (60*60)", "tree": 2, "body": "\u003Cdiv class=\"col-sm-6 col-md-4\"\u003E   \u003Cdiv class=\"feature-box h-100 icon-grad\"\u003E     \u003Cdiv class=\"feature-box-icon\"\u003E       \u003Cimg src=\"\" alt=\"\" style=\"height:60px;width:60px\"\u003E     \u003C\/div\u003E     \u003Cdiv\u003E       \u003Ch5 class=\"article-title\"\u003E\u003C\/h5\u003E       \u003Cdiv class=\"theme-content\"\u003E \u003C\/div\u003E     \u003C\/div\u003E   \u003C\/div\u003E \u003C\/div\u003E", "max_articles": 1, "image_type": "src", "created_at": "2022-04-07T04:15:35.000000Z", "updated_at": "2022-04-22T06:13:56.000000Z" } }, { "id": 34, "status": 2, "biz_status": 2, "title": "Expertise", "has_title": true, "detail": "{\"ops\":[{\"insert\":\"\\n\"}]}", "body": "{\"ops\":[{\"insert\":\"We provide technical expertise in line with Energy Market Authority(EMA) and Infocomm Media Development Authority(IMDA) regulatory standards and all relevant authorities.\\n\"}]}", "image_url": "storage\/images\/bb1IDumTU9Iq3IoGLqrLz4CgWHeqyvDJVwTsJX8g.png", "fk_group_id": 12, "fk_theme_id": 38, "detail_title": null, "detail_image_url": null, "order": 3, "btn_detail": false, "created_at": "2022-04-07T04:42:57.000000Z", "updated_at": "2022-08-02T10:46:01.000000Z", "theme": { "id": 38, "status": 2, "biz_status": 2, "title": "Feature Png (60*60)", "tree": 2, "body": "\u003Cdiv class=\"col-sm-6 col-md-4\"\u003E   \u003Cdiv class=\"feature-box h-100 icon-grad\"\u003E     \u003Cdiv class=\"feature-box-icon\"\u003E       \u003Cimg src=\"\" alt=\"\" style=\"height:60px;width:60px\"\u003E     \u003C\/div\u003E     \u003Cdiv\u003E       \u003Ch5 class=\"article-title\"\u003E\u003C\/h5\u003E       \u003Cdiv class=\"theme-content\"\u003E \u003C\/div\u003E     \u003C\/div\u003E   \u003C\/div\u003E \u003C\/div\u003E", "max_articles": 1, "image_type": "src", "created_at": "2022-04-07T04:15:35.000000Z", "updated_at": "2022-04-22T06:13:56.000000Z" } }, { "id": 35, "status": 2, "biz_status": 2, "title": "Flexibility", "has_title": true, "detail": "{\"ops\":[{\"insert\":\"\\n\"}]}", "body": "{\"ops\":[{\"insert\":\"We keep an open-mind in understanding our clients\u2019 needs. We adapt to the fast-paced and ever-changing demands of the construction industry in Singapore and embrace change and continuous learning.\\n\"}]}", "image_url": "storage\/images\/qxuzXfyabrsRUvfFqS9H5KDpHZQIRt8RKukiZZvn.png", "fk_group_id": 12, "fk_theme_id": 38, "detail_title": null, "detail_image_url": null, "order": 4, "btn_detail": false, "created_at": "2022-04-07T04:44:20.000000Z", "updated_at": "2022-08-02T10:46:18.000000Z", "theme": { "id": 38, "status": 2, "biz_status": 2, "title": "Feature Png (60*60)", "tree": 2, "body": "\u003Cdiv class=\"col-sm-6 col-md-4\"\u003E   \u003Cdiv class=\"feature-box h-100 icon-grad\"\u003E     \u003Cdiv class=\"feature-box-icon\"\u003E       \u003Cimg src=\"\" alt=\"\" style=\"height:60px;width:60px\"\u003E     \u003C\/div\u003E     \u003Cdiv\u003E       \u003Ch5 class=\"article-title\"\u003E\u003C\/h5\u003E       \u003Cdiv class=\"theme-content\"\u003E \u003C\/div\u003E     \u003C\/div\u003E   \u003C\/div\u003E \u003C\/div\u003E", "max_articles": 1, "image_type": "src", "created_at": "2022-04-07T04:15:35.000000Z", "updated_at": "2022-04-22T06:13:56.000000Z" } }], "type": { "id": 1, "status": 2, "biz_status": 2, "code": "about", "title": "about", "allow_detail": true, "allow_body": true, "is_unique": false, "allow_pagination": true, "created_at": "2022-03-30T06:54:49.000000Z", "updated_at": "2022-04-09T16:27:56.000000Z", "body": "Get in touch with by completing the below form or call us now" }, "theme": null, "group_theme": { "id": 36, "status": 2, "biz_status": 2, "title": "Features", "tree": 1, "body": "\u003Csection class=\"headline bg-light bg-image-default\"\u003E   \u003Cdiv class=\"container\"\u003E     \u003Cdiv class=\"row justify-content-center group-container\" data-aos-once=\"true\" data-aos=\"fade-up\"\u003E       \u003Cdiv class=\"col-lg-6 col-md-8 col-sm-10 text-center\"\u003E         \u003Cdiv class=\"mb-5 pb-2 group-content\"\u003E \u003C\/div\u003E       \u003C\/div\u003E     \u003C\/div\u003E     \u003Cdiv class=\"row row-cols-1 row-cols-md-2 row-cols-lg-3 g-5 justify-content-center group-contents\"\u003E\u003C\/div\u003E     \u003Cdiv class=\"btn-detail-container d-flex justify-content-center\"\u003E \u003Ca class=\"btn btn-light btn-point me-3 btn-detail\" href=\"#\"\u003E\u003Cspan\u003EView More\u003C\/span\u003E\u003C\/a\u003E \u003C\/div\u003E   \u003C\/div\u003E \u003C\/section\u003E", "max_articles": 30, "image_type": "src", "created_at": "2022-04-07T03:49:39.000000Z", "updated_at": "2022-04-25T11:20:21.000000Z" } }, { "id": 15, "status": 2, "biz_status": 2, "order": 5, "title": "Our Team", "has_title": true, "highlight": "{\"ops\":[{\"attributes\":{\"size\":\"small\"},\"insert\":\"They are all professionals\"},{\"insert\":\"\\n\"},{\"attributes\":{\"color\":\"#0066cc\",\"bold\":true},\"insert\":\"Creative \"},{\"attributes\":{\"bold\":true},\"insert\":\"Team and founders\"},{\"attributes\":{\"header\":2},\"insert\":\"\\n\"},{\"insert\":\"\\n\"},{\"attributes\":{\"color\":\"#666666\"},\"insert\":\"We are a local team of dedicated full-time Cable Detection Specialists. Training and\u00a0\"},{\"attributes\":{\"color\":\"#666666\",\"background\":\"rgba(0, 0, 0, 0)\"},\"insert\":\"regulatory standards are kept up-to-date with all our associates. Each specialist is equipped with the knowledge\u00a0and skill in performing underground cable detection through set procedures and cable locating techniques with\u00a0our in-house training and apprenticeship.\"},{\"insert\":\"\\n\"}]}", "fk_group_theme_id": 39, "fk_type_id": 1, "on_navbar": false, "on_home": false, "dropdown_on_navbar": false, "show_all": true, "max_items": 0, "image_url": null, "created_at": "2022-04-07T12:18:54.000000Z", "updated_at": "2022-07-31T05:22:06.000000Z", "html": null, "articlesCount": 3, "articles": [{ "id": 42, "status": 2, "biz_status": 2, "title": "Mickel", "has_title": true, "detail": "{\"ops\":[{\"insert\":\"\\n\"}]}", "body": "{\"ops\":[{\"insert\":\"Mickel Jason\\nSenior Developer\\n\"}]}", "image_url": "storage\/images\/TheIznnSr22M72cCYuds9N9ZdtyUsI1iqiRCV22n.jpg", "fk_group_id": 15, "fk_theme_id": 40, "detail_title": null, "detail_image_url": null, "order": 1, "btn_detail": false, "created_at": "2022-04-07T12:18:54.000000Z", "updated_at": "2022-07-31T05:21:47.000000Z", "theme": { "id": 40, "status": 2, "biz_status": 2, "title": "Team Item", "tree": 2, "body": "\u003Cdiv class=\"carousel-team-cell\"\u003E      \u003Cdiv class=\"team-item mb-0 text-center\"\u003E        \u003Cdiv class=\"team-avatar\"\u003E \u003Cimg alt=\"team-avatar\" \/\u003E \u003C\/div\u003E        \u003Cdiv class=\"team-desc theme-content\"\u003E \u003C\/div\u003E      \u003C\/div\u003E    \u003C\/div\u003E", "max_articles": 1, "image_type": "src", "created_at": "2022-04-07T11:13:38.000000Z", "updated_at": "2022-04-09T05:59:33.000000Z" } }, { "id": 43, "status": 2, "biz_status": 2, "title": "Jellery", "has_title": true, "detail": "{\"ops\":[{\"insert\":\"\\n\"}]}", "body": "{\"ops\":[{\"attributes\":{\"size\":\"large\"},\"insert\":\"Jellery\"},{\"insert\":\"\\nSoftware Developer\\n\"}]}", "image_url": "storage\/images\/K7sjdey0Os4a9SEQwIl790JpPan0J1nyrW1QYD1R.jpg", "fk_group_id": 15, "fk_theme_id": 40, "detail_title": null, "detail_image_url": null, "order": 2, "btn_detail": false, "created_at": "2022-04-07T12:27:25.000000Z", "updated_at": "2022-07-31T05:21:56.000000Z", "theme": { "id": 40, "status": 2, "biz_status": 2, "title": "Team Item", "tree": 2, "body": "\u003Cdiv class=\"carousel-team-cell\"\u003E      \u003Cdiv class=\"team-item mb-0 text-center\"\u003E        \u003Cdiv class=\"team-avatar\"\u003E \u003Cimg alt=\"team-avatar\" \/\u003E \u003C\/div\u003E        \u003Cdiv class=\"team-desc theme-content\"\u003E \u003C\/div\u003E      \u003C\/div\u003E    \u003C\/div\u003E", "max_articles": 1, "image_type": "src", "created_at": "2022-04-07T11:13:38.000000Z", "updated_at": "2022-04-09T05:59:33.000000Z" } }, { "id": 44, "status": 2, "biz_status": 2, "title": "David", "has_title": true, "detail": "{\"ops\":[{\"insert\":\"\\n\"}]}", "body": "{\"ops\":[{\"attributes\":{\"size\":\"large\"},\"insert\":\"David\"},{\"insert\":\"\\nSoftware Developer\\n\"}]}", "image_url": "storage\/images\/shiYqHsniAhSCAXMf3y5WmEsnWSF08UmTecsAJ8G.jpg", "fk_group_id": 15, "fk_theme_id": 40, "detail_title": null, "detail_image_url": null, "order": 3, "btn_detail": false, "created_at": "2022-04-07T12:27:55.000000Z", "updated_at": "2022-07-31T05:22:06.000000Z", "theme": { "id": 40, "status": 2, "biz_status": 2, "title": "Team Item", "tree": 2, "body": "\u003Cdiv class=\"carousel-team-cell\"\u003E      \u003Cdiv class=\"team-item mb-0 text-center\"\u003E        \u003Cdiv class=\"team-avatar\"\u003E \u003Cimg alt=\"team-avatar\" \/\u003E \u003C\/div\u003E        \u003Cdiv class=\"team-desc theme-content\"\u003E \u003C\/div\u003E      \u003C\/div\u003E    \u003C\/div\u003E", "max_articles": 1, "image_type": "src", "created_at": "2022-04-07T11:13:38.000000Z", "updated_at": "2022-04-09T05:59:33.000000Z" } }], "type": { "id": 1, "status": 2, "biz_status": 2, "code": "about", "title": "about", "allow_detail": true, "allow_body": true, "is_unique": false, "allow_pagination": true, "created_at": "2022-03-30T06:54:49.000000Z", "updated_at": "2022-04-09T16:27:56.000000Z", "body": "Get in touch with by completing the below form or call us now" }, "theme": null, "group_theme": { "id": 39, "status": 2, "biz_status": 2, "title": "Team", "tree": 1, "body": "\u003Csection class=\"headline\"\u003E   \u003Cdiv class=\"container\"\u003E     \u003Cdiv class=\"row\"\u003E       \u003Cdiv class=\"col-md-6 align-self-center mb-md-0 mb-5\"\u003E         \u003Cdiv class=\"group-content\"\u003E\u003C\/div\u003E         \u003Cdiv class=\" py-3\"\u003E           \u003Ca class=\"btn btn-primary btn-point\" href=\"\"\u003E\u003Cspan\u003EApply now!\u003C\/span\u003E\u003C\/a\u003E         \u003C\/div\u003E       \u003C\/div\u003E       \u003Cdiv class=\"col-md-6 align-self-center \"\u003E         \u003Cdiv class=\"carousel-team group-contents flickity-container\" data-flickity='{ \"groupCells\": true,\"autoPlay\": true,\"wrapAround\": true,\"prevNextButtons\": false,\"pageDots\": false}'\u003E \u003C\/div\u003E       \u003C\/div\u003E     \u003C\/div\u003E   \u003C\/div\u003E \u003C\/section\u003E", "max_articles": 30, "image_type": "src", "created_at": "2022-04-07T11:13:11.000000Z", "updated_at": "2022-04-09T05:59:21.000000Z" } }, { "id": 5, "status": 2, "biz_status": 2, "order": 6, "title": "Our Clients", "has_title": true, "highlight": "{\"ops\":[{\"insert\":\"Trusted by thousands\"},{\"attributes\":{\"align\":\"center\",\"header\":2},\"insert\":\"\\n\"},{\"insert\":\"On a broad spectrum, our clients are from Government Agencies, Consultant companies, Construction firms and SMEs of different profiles and needs.\"},{\"attributes\":{\"align\":\"center\"},\"insert\":\"\\n\"}]}", "fk_group_theme_id": 41, "fk_type_id": 1, "on_navbar": false, "on_home": false, "dropdown_on_navbar": false, "show_all": true, "max_items": 0, "image_url": null, "created_at": "2022-04-02T07:16:28.000000Z", "updated_at": "2022-08-02T15:37:56.000000Z", "html": null, "articlesCount": 8, "articles": [{ "id": 14, "status": 2, "biz_status": 2, "title": "Flaticon", "has_title": true, "detail": "{\"ops\":[{\"insert\":\"\\n\"}]}", "body": "{\"ops\":[{\"insert\":\"Quickly manage the layout, alignment, and sizing of grid columns, navigation, components, and more with a full\\n\"}]}", "image_url": "storage\/images\/SJXGMYwYZOTMFEy1ia3jgfmK3qMFa3FWl26L7E3d.png", "fk_group_id": 5, "fk_theme_id": 42, "detail_title": null, "detail_image_url": null, "order": 1, "btn_detail": false, "created_at": "2022-04-02T07:16:28.000000Z", "updated_at": "2022-08-02T15:30:19.000000Z", "theme": { "id": 42, "status": 2, "biz_status": 2, "title": "Client Item", "tree": 2, "body": "\u003Cdiv class=\"col-4 col-md-2 mb-5\"\u003E\u003Cimg class=\"w-75\" alt=\"client item\"\u003E\u003C\/div\u003E", "max_articles": 1, "image_type": "src", "created_at": "2022-04-08T05:25:26.000000Z", "updated_at": "2022-04-08T05:25:26.000000Z" } }, { "id": 15, "status": 2, "biz_status": 2, "title": "Samsung", "has_title": true, "detail": "{\"ops\":[{\"insert\":\"\\n\"}]}", "body": "{\"ops\":[{\"insert\":\"Locating Services provides concrete scanning to our customers for them inside or outside cutting or coring jobs\\n\"}]}", "image_url": "storage\/images\/CHRmu28iiiALuaPVvPWfaW4XoJCkqJqbpRHoNwbk.png", "fk_group_id": 5, "fk_theme_id": 42, "detail_title": null, "detail_image_url": null, "order": 2, "btn_detail": false, "created_at": "2022-04-02T07:35:05.000000Z", "updated_at": "2022-08-02T15:30:39.000000Z", "theme": { "id": 42, "status": 2, "biz_status": 2, "title": "Client Item", "tree": 2, "body": "\u003Cdiv class=\"col-4 col-md-2 mb-5\"\u003E\u003Cimg class=\"w-75\" alt=\"client item\"\u003E\u003C\/div\u003E", "max_articles": 1, "image_type": "src", "created_at": "2022-04-08T05:25:26.000000Z", "updated_at": "2022-04-08T05:25:26.000000Z" } }, { "id": 16, "status": 2, "biz_status": 2, "title": "Oracle", "has_title": true, "detail": "{\"ops\":[{\"insert\":\"\\n\"}]}", "body": "{\"ops\":[{\"insert\":\"Locating Services can provide CCTV camera footage for them pipe and small spots your having troubles with.\\n\"}]}", "image_url": "storage\/images\/RHoYrPgBj5phTS0Alg9YShFvxSiwjhhuhE5FzP1v.png", "fk_group_id": 5, "fk_theme_id": 42, "detail_title": null, "detail_image_url": null, "order": 3, "btn_detail": false, "created_at": "2022-04-02T07:35:48.000000Z", "updated_at": "2022-08-02T15:35:48.000000Z", "theme": { "id": 42, "status": 2, "biz_status": 2, "title": "Client Item", "tree": 2, "body": "\u003Cdiv class=\"col-4 col-md-2 mb-5\"\u003E\u003Cimg class=\"w-75\" alt=\"client item\"\u003E\u003C\/div\u003E", "max_articles": 1, "image_type": "src", "created_at": "2022-04-08T05:25:26.000000Z", "updated_at": "2022-04-08T05:25:26.000000Z" } }, { "id": 45, "status": 2, "biz_status": 2, "title": "IBM", "has_title": true, "detail": "{\"ops\":[{\"insert\":\"\\n\"}]}", "body": "{\"ops\":[{\"insert\":\"\\n\"}]}", "image_url": "storage\/images\/x61oIKvtr0FSPY3t8XV5BxW5oX4TL6AdoygMQYzt.png", "fk_group_id": 5, "fk_theme_id": 42, "detail_title": null, "detail_image_url": null, "order": 4, "btn_detail": false, "created_at": "2022-04-08T05:58:59.000000Z", "updated_at": "2022-08-02T15:31:45.000000Z", "theme": { "id": 42, "status": 2, "biz_status": 2, "title": "Client Item", "tree": 2, "body": "\u003Cdiv class=\"col-4 col-md-2 mb-5\"\u003E\u003Cimg class=\"w-75\" alt=\"client item\"\u003E\u003C\/div\u003E", "max_articles": 1, "image_type": "src", "created_at": "2022-04-08T05:25:26.000000Z", "updated_at": "2022-04-08T05:25:26.000000Z" } }, { "id": 46, "status": 2, "biz_status": 2, "title": "Picktab", "has_title": true, "detail": "{\"ops\":[{\"insert\":\"\\n\"}]}", "body": "{\"ops\":[{\"insert\":\"\\n\"}]}", "image_url": "storage\/images\/FoKEViKmDHRbKgO4MKXqR3M8XKPLptVed892X8kN.png", "fk_group_id": 5, "fk_theme_id": 42, "detail_title": null, "detail_image_url": null, "order": 5, "btn_detail": false, "created_at": "2022-04-08T05:59:23.000000Z", "updated_at": "2022-08-02T15:37:56.000000Z", "theme": { "id": 42, "status": 2, "biz_status": 2, "title": "Client Item", "tree": 2, "body": "\u003Cdiv class=\"col-4 col-md-2 mb-5\"\u003E\u003Cimg class=\"w-75\" alt=\"client item\"\u003E\u003C\/div\u003E", "max_articles": 1, "image_type": "src", "created_at": "2022-04-08T05:25:26.000000Z", "updated_at": "2022-04-08T05:25:26.000000Z" } }, { "id": 47, "status": 2, "biz_status": 2, "title": "Sony", "has_title": true, "detail": "{\"ops\":[{\"insert\":\"\\n\"}]}", "body": "{\"ops\":[{\"insert\":\"\\n\"}]}", "image_url": "storage\/images\/iVfJINN3gKKuTCoAU0fDF4Pc8JzDPQKR9ZuwUuxm.png", "fk_group_id": 5, "fk_theme_id": 42, "detail_title": null, "detail_image_url": null, "order": 6, "btn_detail": false, "created_at": "2022-04-08T06:00:09.000000Z", "updated_at": "2022-08-02T15:35:31.000000Z", "theme": { "id": 42, "status": 2, "biz_status": 2, "title": "Client Item", "tree": 2, "body": "\u003Cdiv class=\"col-4 col-md-2 mb-5\"\u003E\u003Cimg class=\"w-75\" alt=\"client item\"\u003E\u003C\/div\u003E", "max_articles": 1, "image_type": "src", "created_at": "2022-04-08T05:25:26.000000Z", "updated_at": "2022-04-08T05:25:26.000000Z" } }, { "id": 48, "status": 2, "biz_status": 2, "title": "Nike", "has_title": true, "detail": "{\"ops\":[{\"insert\":\"\\n\"}]}", "body": "{\"ops\":[{\"insert\":\"\\n\"}]}", "image_url": "storage\/images\/fVoNckEqnpOyD6OzfEqtmQPw9TDGcSDaBxIJ0gQc.png", "fk_group_id": 5, "fk_theme_id": 42, "detail_title": null, "detail_image_url": null, "order": 7, "btn_detail": false, "created_at": "2022-04-08T06:00:40.000000Z", "updated_at": "2022-08-02T15:36:04.000000Z", "theme": { "id": 42, "status": 2, "biz_status": 2, "title": "Client Item", "tree": 2, "body": "\u003Cdiv class=\"col-4 col-md-2 mb-5\"\u003E\u003Cimg class=\"w-75\" alt=\"client item\"\u003E\u003C\/div\u003E", "max_articles": 1, "image_type": "src", "created_at": "2022-04-08T05:25:26.000000Z", "updated_at": "2022-04-08T05:25:26.000000Z" } }, { "id": 49, "status": 2, "biz_status": 2, "title": "Asus", "has_title": true, "detail": "{\"ops\":[{\"insert\":\"\\n\"}]}", "body": "{\"ops\":[{\"insert\":\"\\n\"}]}", "image_url": "storage\/images\/bHF8OhUi9XstTl2Boi7uco5l7MRg6XxuKjdepG6V.png", "fk_group_id": 5, "fk_theme_id": 42, "detail_title": null, "detail_image_url": null, "order": 8, "btn_detail": false, "created_at": "2022-04-08T06:00:58.000000Z", "updated_at": "2022-08-02T15:37:04.000000Z", "theme": { "id": 42, "status": 2, "biz_status": 2, "title": "Client Item", "tree": 2, "body": "\u003Cdiv class=\"col-4 col-md-2 mb-5\"\u003E\u003Cimg class=\"w-75\" alt=\"client item\"\u003E\u003C\/div\u003E", "max_articles": 1, "image_type": "src", "created_at": "2022-04-08T05:25:26.000000Z", "updated_at": "2022-04-08T05:25:26.000000Z" } }], "type": { "id": 1, "status": 2, "biz_status": 2, "code": "about", "title": "about", "allow_detail": true, "allow_body": true, "is_unique": false, "allow_pagination": true, "created_at": "2022-03-30T06:54:49.000000Z", "updated_at": "2022-04-09T16:27:56.000000Z", "body": "Get in touch with by completing the below form or call us now" }, "theme": null, "group_theme": { "id": 41, "status": 2, "biz_status": 2, "title": "Clients", "tree": 1, "body": "\u003Csection class=\"headline bg-light\"\u003E   \u003Cdiv class=\"container\"\u003E     \u003Cdiv class=\"row text-center\"\u003E       \u003Cdiv class=\"col-md-8 mx-auto group-content mb-5\"\u003E        \u003C\/div\u003E     \u003C\/div\u003E     \u003Cdiv class=\"row text-center justify-content-center group-contents\"\u003E     \u003C\/div\u003E   \u003C\/div\u003E \u003C\/section\u003E", "max_articles": 50, "image_type": "src", "created_at": "2022-04-08T05:24:35.000000Z", "updated_at": "2022-04-09T05:56:15.000000Z" } }];
+        document.addEventListener("DOMContentLoaded", function (event) {
+            for (let g of groups) {
+                $('.headlines').append(ThemeBuilder.export(new Theme(g, g.type, g.group_theme, g.articles)))
+            }
+        });
+    </script>
+</body>
+
+</html>

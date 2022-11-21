@@ -1,0 +1,312 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CSRF Token -->
+    <meta name="csrf-token" content="OOIv20o6fblIkvhlhXQ5Mdcihe7hOCmbGWw7AVtO">
+
+    <title>Laravel</title>
+
+    <!-- Scripts -->
+    <script src="js/app.js" defer></script>
+
+    <!-- Fonts -->
+    <link rel="dns-prefetch" href="//fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+
+    <!-- Styles -->
+    <link href="css/app.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <style>
+        .header.header-transparent {
+            background-color: rgba(22, 28, 45, 0.9);
+        }
+    </style>
+    <header class="header-outer header header-transparent">
+        <div class="container">
+            <nav class="header-inner">
+                <div class="header-navigation-left d-flex justify-content-center w-sm-100 w-md-auto">
+                    <button class="btn btn-link d-md-none  btn-offcanvas-dismiss" type="button"
+                        data-bs-toggle="offcanvas" data-bs-target="#offcanvas" aria-expanded="false">
+                        <i class="bi bi-list fs-2"></i>
+                    </button>
+                    <a class="header-logo" href="index.html">
+                        <img id="brand-logo" src="storage/images/9q7bg5VidEvwHLdGDYlOBZX1Xy8ARNgrRFHSP8Oi.png"
+                            onerror="document.getElementById('brand-logo').src = 'storage/essential/err_logo.png' " />
+                    </a>
+                </div>
+                <div class="header-navigation offcanvas offcanvas-start" id="offcanvas">
+                    <div class="offcanvas-header d-md-none justify-content-end">
+                        <button type="button" class="btn " data-bs-dismiss="offcanvas" style="color: white"
+                            aria-label="Close">
+                            <i class="bi bi-x-lg fs-2"></i>
+
+                        </button>
+                    </div>
+                    <a href="index.html" class="header-item text-capitalize">Home</a>
+                    <a href="about.html" class="header-item text-capitalize">About Us</a>
+                    <a href="services.html" class="header-item text-capitalize">Services</a>
+                    <a href="gallery.html" class="header-item text-capitalize">Gallery</a>
+                    <a href="contact.html" class="header-item text-capitalize">Contact Us</a>
+                    <div class="dropdown header-item">
+                        <!-- <a class="dropdown-toggle text-decoration-none" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false" v-pre>
+                            admin
+                        </a> -->
+
+                        <div class="dropdown-menu dropdown-menu-end dropdown-menu-dark"
+                            aria-labelledby="navbarDropdown">
+
+                            <a class="dropdown-item" href="admin">Dashboard</a>
+
+                            <a class="dropdown-item" href="logout"
+                                onclick="event.preventDefault();document.getElementById('logout-form').submit();">
+                                Logout
+                            </a>
+
+                            <form id="logout-form" action="logout" method="POST" class="d-none">
+                                <input type="hidden" name="_token" value="OOIv20o6fblIkvhlhXQ5Mdcihe7hOCmbGWw7AVtO">
+                            </form>
+                        </div>
+                    </div>
+
+
+                </div>
+
+            </nav>
+
+        </div>
+    </header>
+    <main>
+        <div style="position: relative">
+            <div class="jarallax bg-gradient pt-5 pb-6 pt-md-7">
+                <img class="jarallax-img" src="storage/essential/contact_us_bgcover.jpg">
+                <span class="position-absolute top-0 start-0 w-100 h-100"
+                    style="background-image: linear-gradient(to right, #1b2a4e 0%, #1b2a4e 30%, #1b2a4e 100%); opacity:0.8"></span>
+
+                <section>
+                    <div class="wave wave1"></div>
+                    <div class="wave wave2"></div>
+                    <div class="wave wave3"></div>
+                    <div class="wave wave4"></div>
+                </section>
+                <div class="container position-relative pt-6">
+                    <div class="row justify-content-center pb-6">
+                        <div class="col">
+                            <h1 class="text-light mb-4">Contacts</h1>
+                            <p class="text-light">Get in touch with by completing the below form or call us now</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <section class="container position-relative pb-5">
+                <div class="row">
+                    <div class="col-lg-6  pb-2 mb-5" style="margin-top: -160px;">
+                        <form action="contact" method="POST" id="quotation-form">
+                            <input type="hidden" name="_token" value="OOIv20o6fblIkvhlhXQ5Mdcihe7hOCmbGWw7AVtO"> <input
+                                type="hidden" name="_method" value="POST">
+                            <div class="card shadow-lg" data-aos="fade-up" data-aos-duration="2000">
+                                <div class="card-header">
+                                    <h4 class="lh-base">Have a project? Let's make something great together!</h4>
+                                    <small>Get in touch with us to see how we can help you with your project</small>
+                                </div>
+
+                                <div class="card-body">
+                                    <div class="mb-4">
+                                        <label for="name" class="form-label small">YOUR NAME *</label>
+                                        <input type="text" class="form-control" id="name" name="name"
+                                            placeholder="John ..">
+                                    </div>
+                                    <div class="mb-4">
+                                        <label for="email" class="form-label small">YOUR EMAIL*</label>
+                                        <input type="email" class="form-control " id="email" name="email"
+                                            placeholder="name@company.com">
+                                    </div>
+                                    <div class="mb-4">
+                                        <label for="phone" class="form-label small">YOUR PHONE</label>
+                                        <input type="tel" class="form-control" id="phone" name="phone"
+                                            placeholder="+65-XXXX-YYYY">
+
+                                    </div>
+                                    <div class="mb-4">
+                                        <label for="message" class="form-label small">YOUR MESSAGE FOR US</label>
+                                        <textarea type="text" class="form-control" id="message" name="message"
+                                            rows="3"></textarea>
+                                    </div>
+                                    <div class="d-flex align-items-center gap-3">
+                                        <input type="submit" class="btn btn-primary rounded-0 w-100" value="Submit">
+
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="mt-lg-5 ps-lg-5 px-3">
+                            <div class="mb-3">
+                                <h3>Contact Info</h3>
+                                <small>Get in touch with us to see how we can help you with your query</small>
+                            </div>
+                            <ul class="list-unstyled mb-3">
+
+                                <li class="mb-3 d-flex justify-content-start gap-3">
+                                    <i class="bi bi-geo-alt-fill"></i>
+
+                                    <div class="ms-2">
+                                        <span>Robert Robertson, 1234 NW Bobcat Lane, St. Robert, MO 65584-5678.</span>
+                                    </div>
+                                </li>
+
+                                <li class="mb-3 d-flex justify-content-start gap-3">
+                                    <i class="bi bi-telephone-fill"></i>
+                                    <div class="ms-2">
+                                        <a href="tel:09 799887722" class="text-decoration-none">09 799887722</a>
+                                        <span class="d-block text-muted text-small">Sun - Sat</span>
+                                        <span class="d-block text-muted text-small">9:30 am - 6:15 pm</span>
+
+                                    </div>
+                                </li>
+
+                                <li class="d-flex justify-content-start gap-3">
+                                    <i class="bi bi-envelope-fill"></i>
+                                    <div class="ms-2">
+                                        <a class="text-decoration-none"
+                                            href="mailto:matthew@coolstuff.com">matthew@coolstuff.com</a>
+                                    </div>
+                                </li>
+
+                            </ul>
+                            <hr>
+                            <h6 class="mb-3">Follow us on</h6>
+                            <ul class="list-unstyled d-flex gap-4">
+                                <li class="mb-3 d-flex justify-content-start gap-3">
+                                    <i class="bi bi-linkedin"></i>
+                                    <div class="ms-2">
+                                        <a class="text-decoration-none" href="#">linkin</a>
+                                    </div>
+                                </li>
+                                <li class="mb-3 d-flex justify-content-start gap-3">
+                                    <i class="bi bi-facebook"></i>
+                                    <div class="ms-2">
+                                        <a class="text-decoration-none" href="">facebook</a>
+                                    </div>
+                                </li>
+                                <li class="mb-3 d-flex justify-content-start gap-3">
+                                    <i class="bi bi-instagram"></i>
+                                    <div class="ms-2">
+                                        <a class="text-decoration-none" href="#">instagram</a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+        </div>
+    </main>
+    <footer class="footer text-white py-5">
+        <div class="container ">
+            <div class="row g-3">
+                <div class="col-sm-12 col-md-6 col-lg-4">
+                    <div class="d-table-cell text-left small">
+                        <h5 class="mb-4 fw-bold">Daniel Matthew</h5>
+                        <ul class="list-unstyled">
+
+                            <li class="mb-3 d-flex justify-content-start gap-3">
+                                <i class="bi bi-geo-alt-fill"></i>
+
+                                <div class="ms-2">
+                                    <span>Robert Robertson, 1234 NW Bobcat Lane, St. Robert, MO 65584-5678.</span>
+                                </div>
+                            </li>
+
+                            <li class="mb-3 d-flex justify-content-start gap-3">
+                                <i class="bi bi-telephone-fill"></i>
+                                <div class="ms-2">
+                                    <a href="tel:09 799887722" class="text-decoration-none text-white">09 799887722</a>
+                                    <span class="d-block text-muted text-small">Sun - Sat</span>
+                                    <span class="d-block text-muted text-small">9:30 am - 6:15 pm</span>
+                                </div>
+                            </li>
+
+                            <li class="mb-3 d-flex justify-content-start gap-3">
+                                <i class="bi bi-envelope-fill"></i>
+                                <div class="ms-2">
+                                    <a class="text-decoration-none text-white"
+                                        href="mailto:matthew@coolstuff.com">matthew@coolstuff.com</a>
+                                </div>
+                            </li>
+
+                            <li class="mb-3 d-flex justify-content-start gap-3 fs-5 ">
+                                <a class="bi bi-linkedin text-white text-decoration-none" href="#"></a>
+                                <a class="bi bi-facebook text-white text-decoration-none" href="#"></a>
+                                <a class="bi bi-instagram text-white text-decoration-none" href="#"></a>
+
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-4">
+                    <div class="quick-link">
+                        <h6>Quick LInks</h6>
+                        <ul class="nav flex-column px-0">
+                            <li class="nav-item "><a class="nav-link text-decoration-none small py-1 text-white"
+                                    href="index.html">Home</a></li>
+                            <li class="nav-item "><a class="nav-link text-decoration-none small py-1 text-white"
+                                    href="about.html">About Us</a></li>
+                            <li class="nav-item "><a class="nav-link text-decoration-none small py-1 text-white"
+                                    href="services.html">Services</a>
+                            </li>
+                            <li class="nav-item "><a class="nav-link text-decoration-none small py-1 text-white"
+                                    href="gallery.html">Gallery</a>
+                            </li>
+                            <li class="nav-item "><a class="nav-link text-decoration-none small py-1 text-white"
+                                    href="contact.html">Contact Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-lg-4">
+                    <div class="bg-transparent ps-lg-5">
+                        <div class="h6 mb-3">Subscribe to our newsletter to receive exclusive offers.</div>
+                        <div class="">
+                            <input type="text" class="form-control mb-3">
+                            <button class="btn btn-primary">Submit</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="row justify-content-start">
+                <div class="col col-md-auto">
+                    <small class="text-muted">Copyright &copy;
+                        <script>document.write(new Date().getFullYear());</script> All Rights Reserved by <strong><a
+                                href="/" class="text-decoration-none text-muted">Daniel Matthew</a></strong>
+                    </small>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script type="text/javascript">
+        const result = null
+        document.addEventListener("DOMContentLoaded", function (event) {
+            if (result) {
+                const successModal = Utility.showSuccessModal('You got it!',
+                    "We've received your message and will get back to you <br> within 24 hours."
+                );
+                successModal.show();
+            }
+        })
+    </script>
+</body>
+
+</html>

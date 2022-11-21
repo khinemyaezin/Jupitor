@@ -1,0 +1,838 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CSRF Token -->
+    <meta name="csrf-token" content="OOIv20o6fblIkvhlhXQ5Mdcihe7hOCmbGWw7AVtO">
+
+    <title>Laravel</title>
+
+    <!-- Scripts -->
+    <script src="js/app.js" defer></script>
+
+    <!-- Fonts -->
+    <link rel="dns-prefetch" href="//fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+
+    <!-- Styles -->
+    <link href="css/app.css" rel="stylesheet">
+</head>
+
+<body>
+    <div id="app">
+        <nav class="navbar navbar-expand-md navbar-dark shadow-sm sticky-top"
+            style="background-color: rgba(22, 28, 45, 0.9)">
+
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <img src="storage/images/9q7bg5VidEvwHLdGDYlOBZX1Xy8ARNgrRFHSP8Oi.png" id="brand-logo" alt=""
+                        height="43"
+                        onerror="document.getElementById('brand-logo').src = 'storage/essential/err_logo.png' ">
+
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <!-- Left Side Of Navbar -->
+                    <ul class="navbar-nav me-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="/admin">Home</a>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Settings
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDropdown">
+                                <li>
+                                    <a class="dropdown-item" href="#">Carousel</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#">Types</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#">Headlines</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#">Theme</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#">Theme
+                                        group</a>
+                                </li>
+
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#">Vital info</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                    </ul>
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <div class="d-flex me-4 gap-2 dropdown" style="max-width: 210px;">
+                                <img class="icon icon-xs rounded-circle" style="width: 36px; height: 36px;"
+                                    src=" storage/images\DS9lJSkTqGYSeSeQErjSfIiKmqT88olhBFqjOtgo.svg ">
+                                <a class="text align-self-center dropdown-toggle text-decoration-none text-white"
+                                    id="user-dropdown" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-haspopup="true" aria-expanded="false" v-pre>
+                                    admin
+                                </a>
+                                <div class="dropdown-menu dropdown-menu-end dropdown-menu-dark"
+                                    aria-labelledby="user-dropdown">
+                                    <a class="dropdown-item" href="#">
+                                        Logout
+                                    </a>
+
+                                    <form id="logout-form" action="logout" method="POST" class="d-none">
+                                        <input type="hidden" name="_token"
+                                            value="OOIv20o6fblIkvhlhXQ5Mdcihe7hOCmbGWw7AVtO">
+                                    </form>
+                                </div>
+                            </div>
+                        </li>
+
+
+                    </ul>
+                </div>
+
+            </div>
+        </nav>
+
+        <main class="admin-main">
+            <form id="myForm" action="#" method="POST" enctype="multipart/form-data">
+                <input type="hidden" name="_token" value="OOIv20o6fblIkvhlhXQ5Mdcihe7hOCmbGWw7AVtO"> <input
+                    type="hidden" name="_method" value="PUT">
+                <div class="container py-3 py-md-0">
+                    <div class="forhead d-flex flex-wrap flex-sm-nowrap justify-content-between align-items-center">
+                        <div class="d-flex align-items-center w-100">
+                            <h4 class="m-0">Headline</h4>
+                            <div class="ps-3 alert-container">
+
+                            </div>
+                        </div>
+                        <div class="my-sm-0 my-3 text-sm-end pt-1 w-100">
+                            <div class="d-flex justify-content-end align-items-center text-nowrap fs-sm gap-3">
+                                <a href="#" class="btn btn-light border ">
+                                    <i class="bi bi-chevron-double-left"></i>
+                                    Back To List
+                                </a>
+                                <input type="submit" class="btn btn-primary" name="submit" value="Update">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                </div>
+                <div class="container admin-headline">
+                    <div class="json-message"></div>
+                    <div class="row">
+                        <div class="col-md-4">
+
+                            <div class="list-group bd-callout mb-3" id="list-tab">
+                                <a class="text-decoration-none list-group-item-action p-3 bd-callout-item border-bottom active"
+                                    id="group-tab" data-bs-toggle="list" href="#list-group" role="tab"
+                                    aria-controls="list-group">
+                                    Heading
+
+                                </a>
+                                <a class="text-decoration-none list-group-item-action bd-callout-item border-bottom"
+                                    id="subheading-tab" data-bs-toggle="list" href="#list-article" role="tab"
+                                    aria-controls="list-article">
+                                    <div class="w-100 p-3 btn-toggle" data-bs-toggle="collapse"
+                                        data-bs-target='#articles-collapse' id="articles-collapse-toggle"
+                                        aria-expanded="false" aria-controls="articles-collapse">
+
+                                        <span>Subheadings</span>
+                                        <span class="menu-arrow ms-auto"></span>
+
+                                    </div>
+                                </a>
+
+                            </div>
+                            <div class="collapse" id="articles-collapse" aria-expanded="false">
+                                <div class="list-group my-3 gap-2 ms-3" role="tablist" id="sortable-articles-list"
+                                    data-sortable="0">
+                                    <div class="d-flex list-group-item list-group-item-action p-0 border-0 rounded-1 ">
+                                        <a href="subheading.html#subheading-tab"
+                                            class="d-block p-2 text-decoration-none d-flex w-100">
+                                            <img class="bd-placeholder-img flex-shrink-0 me-2 rounded-circle" width="30"
+                                                height="30"
+                                                src="storage/images/PkiP8e0EfQ3BXseFdxeJGCsvc19AauKIOb3lZNpy.jpg"
+                                                onerror="this.src = 'storage/essential/def-img.jpg' ">
+                                            <span class="align-self-center">about us</span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="mb-3">
+                                    <a class="ms-3 btn btn-secondary btn-sm "
+                                        href="admin/headline/1/subheading#subheading-tab" id="new-article-btn">
+                                        Create new
+                                        <i class="bi bi-plus-lg"></i>
+                                    </a>
+                                </div>
+
+
+                            </div>
+                        </div>
+                        <div class="col-md-8">
+
+                            <div class="tab-content">
+                                <div class="tab-pane fade show active" id="list-group" role="tabpanel"
+                                    aria-labelledby="list-group-list">
+                                    <h5>Heading</h5>
+                                    <div class="card mb-3">
+                                        <div class="card-body">
+                                            <div class="row mb-3 g-3">
+                                                <div class="col-sm-12 col-md-6">
+                                                    <div class="row g-3 ">
+                                                        <div class="col-lg-12 col-sm-12">
+                                                            <label for="group_title" class="form-label">Title</label>
+                                                            <input type="text" class="form-control" id="group_title"
+                                                                name="group_title" value="Introduction"
+                                                                placeholder="Enter group title..">
+                                                        </div>
+                                                        <div class="col-lg-6 col-sm-12">
+                                                            <label for="types" class="form-label">Types</label>
+                                                            <select class="form-select" id="types"
+                                                                name="group_fk_type_id">
+                                                                <option value="-1" disabled selected>select..</option>
+                                                                <option value="1" data-qcode="about" data-isunique=""
+                                                                    data-allow-detail="1" data-allow-body="1"
+                                                                    data-code="about" data-allow-pagination="1">
+                                                                    about</option>
+                                                                <option value="2" data-qcode="gallery" data-isunique=""
+                                                                    data-allow-detail="1" data-allow-body="1"
+                                                                    data-code="gallery" data-allow-pagination="1">
+                                                                    Gallery</option>
+                                                                <option value="3" data-qcode="intro" data-isunique=""
+                                                                    data-allow-detail="1" data-allow-body="1"
+                                                                    data-code="intro" data-allow-pagination="1">
+                                                                    Introduction</option>
+                                                                <option value="5" data-qcode="services" data-isunique=""
+                                                                    data-allow-detail="1" data-allow-body="1"
+                                                                    data-code="services" data-allow-pagination="1">
+                                                                    Services</option>
+                                                                <option value="7" data-qcode="hello" data-isunique=""
+                                                                    data-allow-detail="1" data-allow-body="1"
+                                                                    data-code="hello" data-allow-pagination="1">
+                                                                    hello</option>
+                                                                <option value="8" data-qcode="our-clients"
+                                                                    data-isunique="" data-allow-detail="1"
+                                                                    data-allow-body="1" data-code="our-clients"
+                                                                    data-allow-pagination="">
+                                                                    Our Clients</option>
+
+                                                            </select>
+
+                                                        </div>
+                                                        <div class="col-lg-6 col-sm-12">
+                                                            <label for="group_theme" class="form-label">Group
+                                                                themes</label>
+                                                            <select class="form-select" id="group_theme"
+                                                                name="group_fk_group_theme_id">
+                                                                <option value="-1" disabled selected>select..</option>
+                                                                <option value="7" data-maxarticle="30"> multiple ( title
+                                                                    middle )</option>
+                                                                <option value="8" data-maxarticle="30"> clean</option>
+                                                                <option value="10" data-maxarticle="30" selected> single
+                                                                </option>
+                                                                <option value="11" data-maxarticle="1"> multi (body)
+                                                                </option>
+                                                                <option value="14" data-maxarticle="30"> multiple (
+                                                                    highlight )</option>
+                                                                <option value="15" data-maxarticle="1"> flip</option>
+                                                                <option value="17" data-maxarticle="30"> gallery
+                                                                </option>
+                                                                <option value="20" data-maxarticle="30"> Welcome
+                                                                </option>
+                                                                <option value="21" data-maxarticle="30"> multiple (
+                                                                    title left )</option>
+                                                                <option value="23" data-maxarticle="4"> Why client
+                                                                    choose us?</option>
+                                                                <option value="28" data-maxarticle="30"> Comments
+                                                                </option>
+                                                                <option value="30" data-maxarticle="30"> List Style
+                                                                </option>
+                                                                <option value="32" data-maxarticle="30"> Carousel
+                                                                    Flickity Gallery</option>
+                                                                <option value="34" data-maxarticle="1"> Card Dark
+                                                                </option>
+                                                                <option value="36" data-maxarticle="30"> Features
+                                                                </option>
+                                                                <option value="39" data-maxarticle="30"> Team</option>
+                                                                <option value="41" data-maxarticle="50"> Clients
+                                                                </option>
+                                                                <option value="43" data-maxarticle="30"> Process
+                                                                </option>
+
+                                                            </select>
+
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-12 col-md-6">
+                                                    <label class="form-label">Photo</label>
+                                                    <div
+                                                        class="dropzone dropzone-single dz-clickable mb-2 group-profile">
+                                                        <div class="dz-preview dz-preview-single">
+
+                                                        </div>
+                                                        <div class="dz-default dz-message d-flex flex-column p-5">
+                                                            <button class="dz-button" type="button"
+                                                                onclick="document.getElementById('group_image').click()">
+                                                                Choose
+                                                            </button>
+                                                            <input type="file" hidden name="group_image_url"
+                                                                id="group_image">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row g-3 ">
+                                                <div class="col-lg-6 col-sm-12">
+                                                    <fieldset class="row mb-3">
+                                                        <legend class="col-form-label col-sm-12 pt-0 ">Status</legend>
+                                                        <div class="col-sm-12">
+                                                            <div class="row">
+                                                                <div class="col-md-6">
+                                                                    <div class="form-check">
+                                                                        <input class="form-check-input" type="checkbox"
+                                                                            id="has_title" name="has_title"
+                                                                            name="has_title">
+                                                                        <label class="form-check-label" for="has_title">
+                                                                            Show title
+                                                                        </label>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                    </fieldset>
+                                                </div>
+                                                <div class="col-lg-6 col-sm-12">
+                                                    <fieldset class="row mb-3">
+                                                        <legend class="col-form-label col-sm-12 pt-0 ">This post appear
+                                                            on</legend>
+                                                        <div class="col-sm-12">
+                                                            <div class="row">
+                                                                <div class="col-md-6">
+                                                                    <div class="form-check">
+                                                                        <input class="form-check-input" type="checkbox"
+                                                                            id="on-home" name="group_on_home">
+                                                                        <label class="form-check-label" for="on-home">
+                                                                            Home page
+                                                                        </label>
+                                                                    </div>
+                                                                    <div class="form-check">
+                                                                        <input class="form-check-input" type="checkbox"
+                                                                            id="on-navbar" name="group_on_navbar">
+                                                                        <label class="form-check-label" for="on-navbar">
+                                                                            Navbar
+                                                                        </label>
+                                                                    </div>
+                                                                    <div class="form-check">
+                                                                        <input class="form-check-input" type="checkbox"
+                                                                            id="dropdown-on-navbar"
+                                                                            name="group_dropdown_on_navbar">
+                                                                        <label class="form-check-label"
+                                                                            for="dropdown-on-navbar">
+                                                                            Has dropdown
+                                                                        </label>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-6">
+                                                                    <div class=" show-all-group">
+                                                                        <div class="form-check">
+                                                                            <input class="form-check-input"
+                                                                                type="checkbox" id="show-all"
+                                                                                name="show_all">
+                                                                            <label class="form-check-label"
+                                                                                for="show-all">
+                                                                                No pagination
+                                                                            </label>
+
+                                                                        </div>
+                                                                        <div class=" max-items d-none">
+                                                                            <div class="ps-3 d-flex gap-3">
+                                                                                <div class="form-check">
+                                                                                    <input class="form-check-input"
+                                                                                        type="radio" value="3"
+                                                                                        name="max_items"
+                                                                                        id="max-items-3" checked>
+                                                                                    <label class="form-check-label"
+                                                                                        for="max-items-3">
+                                                                                        3
+                                                                                    </label>
+                                                                                </div>
+                                                                                <div class="form-check">
+                                                                                    <input class="form-check-input"
+                                                                                        type="radio" value="6"
+                                                                                        name="max_items"
+                                                                                        id="max-items-6">
+                                                                                    <label class="form-check-label"
+                                                                                        for="max-items-6">
+                                                                                        6
+                                                                                    </label>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+
+                                                                    </div>
+
+                                                                </div>
+
+                                                            </div>
+
+
+
+                                                        </div>
+                                                    </fieldset>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <label for="" class="form-label">Content</label>
+                                            <div class="quill-editor ">
+                                                <div id="group_highlight" class="rounded border bg-white"></div>
+                                                <input type="text" name="group_highlight" hidden>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="tab-pane fade" id="list-article" role="tabpanel"
+                                    aria-labelledby="list-article-list">
+                                    <div class="d-table w-100"
+                                        style="height: 300px;border: 1px dashed rgba(0, 0, 0, 0.125)">
+                                        <div class="d-table-cell text-muted text-center align-middle">
+                                            Select a subheading
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="preview" class="p-1 p-lg-5 mt-3">
+                    <div class="container preview">
+
+                        <h5 class="align-self-center">Preview</h5>
+                        <a id="refresh-btn" role="button" class="text-decoration-none"> Reload theme <i
+                                class="bi bi-arrow-clockwise"></i></a>
+                        <hr>
+                    </div>
+                    <div class="">
+                        <div class="container active-theme ">
+                        </div>
+                    </div>
+                </div>
+
+            </form>
+        </main>
+
+    </div>
+    <script type="text/javascript">
+        document.addEventListener("DOMContentLoaded", function (event) {
+
+            let group = { "success": true, "code": 200, "message": "Success", "errorMessage": null, "error": null, "data": { "id": 1, "status": 2, "biz_status": 2, "order": 1, "title": "Introduction", "has_title": false, "highlight": "{\"ops\":[{\"insert\":\"About Us\"},{\"attributes\":{\"header\":2},\"insert\":\"\\n\"}]}", "fk_group_theme_id": 10, "fk_type_id": 3, "on_navbar": false, "on_home": true, "dropdown_on_navbar": false, "show_all": true, "max_items": 0, "image_url": "http:\/\/127.0.0.1:8000\/storage\/images\/6MP25PobdnmO73Fm0dUijPn8OrI2CPVCtZBWVCdB.jpg", "created_at": "2022-03-30T06:55:24.000000Z", "updated_at": "2022-08-02T15:21:11.000000Z", "html": null, "articles": [{ "id": 1, "status": 2, "biz_status": 2, "title": "about us", "has_title": true, "detail": "{\"ops\":[{\"insert\":\"\\n\"}]}", "body": "{\"ops\":[{\"attributes\":{\"background\":\"transparent\",\"bold\":true},\"insert\":\"Why Is Cable Detection Necessary?\"},{\"attributes\":{\"header\":2},\"insert\":\"\\n\"},{\"insert\":\"\\n\"},{\"attributes\":{\"background\":\"transparent\"},\"insert\":\"No matter where you are at - Woodlands, Sentosa, Tuas or Changi:\"},{\"insert\":\"\\n\"},{\"attributes\":{\"background\":\"transparent\"},\"insert\":\"To be able to turn on the light in your room at a flick of a switch; To be able to communicate with your loved ones at a call away;\u00a0and to be able to drink clean water with a turn on the tap; It is all thanks to the well-connected underground system of cables and pipes on our Little Red Dot, Singapore.\"},{\"insert\":\"\\n\u00a0\\n\"},{\"attributes\":{\"background\":\"transparent\"},\"insert\":\"This ease of access to electricity, telecommunication and water supply is not to be taken for granted, as it brings so much convenience to us and prosperity to Singapore as a country.\u00a0For us to safeguard the interest of all stakeholders, we must protect our underground cables, pipes and utility infrastructure.\"},{\"insert\":\"\\n\\n\"}]}", "image_url": "http:\/\/127.0.0.1:8000\/storage\/images\/PkiP8e0EfQ3BXseFdxeJGCsvc19AauKIOb3lZNpy.jpg", "fk_group_id": 1, "fk_theme_id": 2, "detail_title": null, "detail_image_url": null, "order": 1, "btn_detail": false, "created_at": "2022-03-30T06:55:24.000000Z", "updated_at": "2022-08-02T15:20:54.000000Z", "theme": { "id": 2, "status": 2, "biz_status": 2, "title": "image_left", "tree": 2, "body": "\u003Cdiv class=\"article bg-transparent col-12 shadow-none\"\u003E   \u003Cdiv class=\"row g-0\"\u003E     \u003Cdiv class=\"col-sm-12 col-md-6 text-center\" data-aos-once=\"true\" data-aos=\"fade-right\"\u003E       \u003Cdiv class=\"md-image py-2\"\u003E\u003Cimg class=\"rounded\"\u003E\u003C\/div\u003E     \u003C\/div\u003E     \u003Cdiv class=\"col-sm col-md-6 align-self-center\" data-aos-once=\"true\" data-aos=\"fade-left\"\u003E       \u003Cdiv class=\"theme-content card-body px-sm-0 px-md-3 px-lg-5 \"\u003E\u003C\/div\u003E       \u003Cdiv class=\"px-sm-0 px-md-3 px-lg-5 d-flex\"\u003E \u003Ca class=\"btn btn-light btn-point btn-detail\"\u003E\u003Cspan\u003EView More\u003C\/span\u003E\u003C\/a\u003E \u003C\/div\u003E     \u003C\/div\u003E   \u003C\/div\u003E \u003C\/div\u003E", "max_articles": 30, "image_type": "src", "created_at": "2022-03-02T15:47:41.000000Z", "updated_at": "2022-03-30T07:22:37.000000Z" } }, { "id": 7, "status": 2, "biz_status": 2, "title": "Online Pipe promise prompt", "has_title": true, "detail": "{\"ops\":[{\"insert\":\"\\n\"}]}", "body": "{\"ops\":[{\"insert\":\"Online Pipe promise prompt and efficient cable and pipe locating services throughout Sydney, as well as the Canberra, Wollongong, Central Coast, Hunter, and Newcastle areas.\\n\\nOnline Pipe provides services to utility companies, councils, construction companies, builders, plumbers, and civil engineers and contractors. Online Pipe has been operating for more than 23 years and has expertise in providing professional solutions for the location of underground assets and ancillary services to help restore pipes and drains to working order.\\n\"}]}", "image_url": "http:\/\/127.0.0.1:8000\/storage\/images\/N8nrgF7XYHZu6GboRZ7iSJeT1Wiy1sHkczYyjGI1.jpg", "fk_group_id": 1, "fk_theme_id": 3, "detail_title": null, "detail_image_url": null, "order": 2, "btn_detail": false, "created_at": "2022-04-02T06:57:28.000000Z", "updated_at": "2022-08-02T15:21:11.000000Z", "theme": { "id": 3, "status": 2, "biz_status": 2, "title": "image_right", "tree": 2, "body": "\u003Cdiv class=\"article bg-transparent col-12 shadow-none\"\u003E   \u003Cdiv class=\"row g-0\"\u003E     \u003Cdiv class=\"col-sm col-md-6 align-self-center\" data-aos-once=\"true\" data-aos=\"fade-right\"\u003E       \u003Cdiv class=\"theme-content card-body  px-sm-0 px-md-3 px-lg-5\"\u003E\u003C\/div\u003E       \u003Cdiv class=\"d-flex card-body\"\u003E \u003Ca class=\"btn btn-light btn-point btn-detail\"\u003E \u003Cspan\u003EView More\u003C\/span\u003E \u003C\/a\u003E \u003C\/div\u003E     \u003C\/div\u003E     \u003Cdiv class=\"col-sm-12 col-md-6 text-center\" data-aos-once=\"true\" data-aos=\"fade-left\"\u003E       \u003Cdiv class=\"md-image py-2\"\u003E \u003Cimg class=\"rounded\" alt=\"...\"\u003E \u003C\/div\u003E     \u003C\/div\u003E   \u003C\/div\u003E \u003C\/div\u003E", "max_articles": 30, "image_type": "src", "created_at": "2022-03-02T15:47:41.000000Z", "updated_at": "2022-04-02T06:59:25.000000Z" } }] }, "list": [] }
+            let types = { "success": true, "code": 200, "message": "Success", "errorMessage": null, "error": null, "data": null, "list": [{ "id": 1, "status": 2, "biz_status": 2, "code": "about", "title": "about", "allow_detail": true, "allow_body": true, "is_unique": false, "allow_pagination": true, "created_at": "2022-03-30T06:54:49.000000Z", "updated_at": "2022-04-09T16:27:56.000000Z", "body": "Get in touch with by completing the below form or call us now" }, { "id": 2, "status": 2, "biz_status": 2, "code": "gallery", "title": "Gallery", "allow_detail": true, "allow_body": true, "is_unique": false, "allow_pagination": true, "created_at": "2022-03-30T09:02:58.000000Z", "updated_at": "2022-04-09T10:28:18.000000Z", "body": "Our blog shows our hard work and devotion to helping our clients succeed. Don't just take our word for it. Check out the latest work." }, { "id": 3, "status": 2, "biz_status": 2, "code": "intro", "title": "Introduction", "allow_detail": true, "allow_body": true, "is_unique": false, "allow_pagination": true, "created_at": "2022-04-02T07:10:07.000000Z", "updated_at": "2022-04-02T07:10:07.000000Z", "body": null }, { "id": 5, "status": 2, "biz_status": 2, "code": "services", "title": "Services", "allow_detail": true, "allow_body": true, "is_unique": false, "allow_pagination": true, "created_at": "2022-04-04T10:11:14.000000Z", "updated_at": "2022-04-09T06:12:16.000000Z", "body": "Years of experience in the industry along with partnerships with many major corporations." }, { "id": 7, "status": 2, "biz_status": 2, "code": "hello", "title": "hello", "allow_detail": true, "allow_body": true, "is_unique": false, "allow_pagination": true, "created_at": "2022-04-04T10:16:10.000000Z", "updated_at": "2022-04-04T10:16:10.000000Z", "body": null }, { "id": 8, "status": 2, "biz_status": 2, "code": "our-clients", "title": "Our Clients", "allow_detail": true, "allow_body": true, "is_unique": false, "allow_pagination": false, "created_at": "2022-04-07T16:57:50.000000Z", "updated_at": "2022-04-07T16:57:50.000000Z", "body": "." }] };
+            let article = { "success": null, "code": null, "message": null, "errorMessage": null, "error": null, "data": null, "list": [] };
+            let groupThemes = { "success": true, "code": 200, "message": "Success", "errorMessage": null, "error": null, "data": null, "list": [{ "id": 7, "status": 2, "biz_status": 2, "title": "multiple ( title middle )", "tree": 1, "body": "\u003Csection class=\"headline\"\u003E   \u003Cdiv class=\"container\"\u003E     \u003Cdiv class=\"row justify-content-center group-container\" data-aos-once=\"true\" data-aos=\"fade-up\"\u003E       \u003Cdiv class=\"col-lg-6 col-md-8 col-sm-10 text-center\"\u003E         \u003Cdiv class=\"text-muted mb-5 pb-2 group-content\"\u003E \u003C\/div\u003E       \u003C\/div\u003E     \u003C\/div\u003E     \u003Cdiv class=\"row row-cols-1 row-cols-md-2 row-cols-lg-3 g-5 justify-content-center group-contents\"\u003E\u003C\/div\u003E   \u003C\/div\u003E \u003C\/section\u003E", "max_articles": 30, "image_type": "src", "created_at": "2022-03-02T15:47:41.000000Z", "updated_at": "2022-04-22T06:21:14.000000Z" }, { "id": 8, "status": 2, "biz_status": 2, "title": "clean", "tree": 1, "body": "\u003Csection class=\"headline\"\u003E   \u003Cdiv class=\"container\"\u003E     \u003Cdiv class=\"group-contents\"\u003E\u003C\/div\u003E   \u003C\/div\u003E \u003C\/section\u003E", "max_articles": 30, "image_type": "src", "created_at": "2022-03-02T21:13:15.000000Z", "updated_at": "2022-03-27T08:08:05.000000Z" }, { "id": 10, "status": 2, "biz_status": 2, "title": "single", "tree": 1, "body": "\u003Csection class=\"headline\"\u003E   \u003Cdiv class=\"container\"\u003E     \u003Cdiv class=\"row justify-content-center group-container\"\u003E       \u003Cdiv class=\"col-lg-6 col-md-8 col-sm-10 text-center\"\u003E         \u003Cdiv class=\"text-muted mb-5 pb-2 group-content\"\u003E \u003C\/div\u003E       \u003C\/div\u003E     \u003C\/div\u003E     \u003Cdiv class=\"group-contents\"\u003E\u003C\/div\u003E   \u003C\/div\u003E \u003C\/section\u003E", "max_articles": 30, "image_type": "src", "created_at": "2022-03-03T22:30:38.000000Z", "updated_at": "2022-04-02T16:06:15.000000Z" }, { "id": 11, "status": 2, "biz_status": 2, "title": "multi (body)", "tree": 1, "body": "\u003Csection class=\"headline\"\u003E   \u003Cdiv class=\"container\"\u003E     \u003Cdiv class=\"row row-cols-1 row-cols-md-3 g-5 justify-content-center group-contents\"\u003E\u003C\/div\u003E   \u003C\/div\u003E \u003C\/section\u003E", "max_articles": 1, "image_type": "src", "created_at": "2022-03-05T23:17:11.000000Z", "updated_at": "2022-03-30T05:28:40.000000Z" }, { "id": 14, "status": 2, "biz_status": 2, "title": "multiple ( highlight )", "tree": 1, "body": "\u003Csection class=\"headline\"\u003E \u003Cdiv class=\"container\"\u003E \u003Cdiv class=\"row justify-content-center\"\u003E \u003Cdiv class=\"col-lg-6 col-md-8 col-sm-10 text-center\"\u003E \u003Ch2 class=\"group-title\"\u003E\u003C\/h2\u003E \u003Cdiv class=\"text-muted mb-5 pb-2 group-content\"\u003E \u003C\/div\u003E\u003C\/div\u003E\u003C\/div\u003E\u003Cdiv class=\"px-md-5 px-sm-0 row row-cols-1 row-cols-md-2 g-5 group-contents\"\u003E\u003C\/div\u003E\u003C\/div\u003E\u003C\/section\u003E", "max_articles": 30, "image_type": "src", "created_at": "2022-03-15T17:34:00.000000Z", "updated_at": "2022-04-02T16:09:29.000000Z" }, { "id": 15, "status": 2, "biz_status": 2, "title": "flip", "tree": 1, "body": "\u003Csection class=\"headline\"\u003E\u003Cdiv class=\"container\"\u003E \u003Cdiv class=\"row row-cols-1 row-cols-lg-3 align-items-stretch g-4 group-contents\"\u003E\u003C\/div\u003E\u003Cdiv class=\"row justify-content-center btn-detail-container pt-5\"\u003E \u003Cdiv class=\"col-lg-6 col-md-8 col-sm-10 text-center\"\u003E \u003Ca href=\"\" class=\"btn btn-light btn-lg btn-point border  btn-detail\"\u003E \u003Cspan\u003ERead More\u003C\/span\u003E \u003C\/a\u003E \u003C\/div\u003E\u003C\/div\u003E\u003C\/div\u003E\u003C\/section\u003E", "max_articles": 1, "image_type": "background-image", "created_at": "2022-03-15T21:06:42.000000Z", "updated_at": "2022-03-15T17:15:06.000000Z" }, { "id": 17, "status": 2, "biz_status": 2, "title": "gallery", "tree": 1, "body": "\u003Csection class=\"headline\"\u003E   \u003Cdiv class=\"container\"\u003E     \u003Cdiv class=\"row justify-content-center group-container\" data-aos-once=\"true\" data-aos=\"fade-up\"\u003E       \u003Cdiv class=\"col-lg-6 col-md-8 col-sm-10 text-center\"\u003E         \u003Cdiv class=\"text-muted mb-5 pb-2 group-content\"\u003E \u003C\/div\u003E       \u003C\/div\u003E     \u003C\/div\u003E     \u003Cdiv class=\"flexbin flexbin-margin group-contents\"\u003E\u003C\/div\u003E   \u003C\/div\u003E \u003C\/section\u003E", "max_articles": 30, "image_type": "src", "created_at": "2022-03-17T15:44:49.000000Z", "updated_at": "2022-04-02T16:08:38.000000Z" }, { "id": 20, "status": 2, "biz_status": 2, "title": "Welcome", "tree": 1, "body": "\u003Csection class=\"headline\"\u003E \u003Cdiv class=\"container\"\u003E \u003Cdiv class=\"row group-contents\"\u003E\u003C\/div\u003E\u003C\/div\u003E\u003C\/section\u003E", "max_articles": 30, "image_type": "src", "created_at": "2022-03-19T09:41:46.000000Z", "updated_at": "2022-03-19T09:41:46.000000Z" }, { "id": 21, "status": 2, "biz_status": 2, "title": "multiple ( title left )", "tree": 1, "body": "\u003Csection class=\"headline\"\u003E   \u003Cdiv class=\"container\"\u003E     \u003Cdiv class=\"row justify-content-center group-container mb-5\" data-aos-once=\"true\" data-aos=\"fade-up\"\u003E       \u003Cdiv class=\"col-md-8 text-start\"\u003E         \u003Cdiv class=\"text-muted pb-2 group-content\"\u003E \u003C\/div\u003E       \u003C\/div\u003E       \u003Cdiv class=\"d-md-flex align-items-center justify-content-end col-md-4\"\u003E \u003Ca class=\"btn btn-light btn-point btn-detail   btn-detail-container\"\u003E \u003Cspan\u003ESee all\u003C\/span\u003E \u003C\/a\u003E \u003C\/div\u003E     \u003C\/div\u003E     \u003Cdiv class=\"row row-cols-1 row-cols-md-2 row-cols-lg-3 g-5 justify-content-center group-contents\"\u003E\u003C\/div\u003E   \u003C\/div\u003E \u003C\/section\u003E", "max_articles": 30, "image_type": "src", "created_at": "2022-03-26T16:40:05.000000Z", "updated_at": "2022-04-02T16:05:14.000000Z" }, { "id": 23, "status": 2, "biz_status": 2, "title": "Why client choose us?", "tree": 1, "body": "\u003Csection class=\"headline\"\u003E   \u003Cdiv class=\"container\"\u003E     \u003Cdiv class=\"row justify-content-between align-items-center g-3\"\u003E       \u003Cdiv class=\"col-lg-6 col-md-12\"\u003E         \u003Cdiv class=\"pb-0 group-content\"\u003E\u003C\/div\u003E         \u003Cdiv class=\"mt-3\"\u003E \u003Ca class=\"btn btn-primary btn-point me-3\" href=\"\/contact\"\u003E \u003Cspan\u003ERequest a quote\u003C\/span\u003E\u003C\/a\u003E \u003C\/div\u003E       \u003C\/div\u003E       \u003Cdiv class=\"col-lg-6 col-md-12\"\u003E         \u003Cdiv class=\"row mt-4 mt-md-0 group-contents\"\u003E\u003C\/div\u003E       \u003C\/div\u003E     \u003C\/div\u003E   \u003C\/div\u003E \u003C\/section\u003E", "max_articles": 4, "image_type": "src", "created_at": "2022-04-05T16:40:57.000000Z", "updated_at": "2022-04-09T05:13:15.000000Z" }, { "id": 28, "status": 2, "biz_status": 2, "title": "Comments", "tree": 1, "body": "\u003Csection class=\"headline  bg-light\"\u003E   \u003Cdiv class=\"container\"\u003E     \u003Cdiv class=\"row\"\u003E       \u003Cdiv class=\"col-lg-6 col-md-12 px-4 py-5 p-lg-5\"\u003E         \u003Cdiv class=\"h-100\"\u003E           \u003Cdiv class=\"text-center p-0 group-content\"\u003E \u003C\/div\u003E           \u003Cdiv class=\"row\"\u003E             \u003Cdiv class=\"carousel slide carousel-avata\" data-bs-ride=\"carousel\"\u003E               \u003Cdiv class=\"carousel-inner group-contents\"\u003E \u003C\/div\u003E             \u003C\/div\u003E           \u003C\/div\u003E         \u003C\/div\u003E       \u003C\/div\u003E       \u003Cdiv class=\"col-lg-6 d-none d-lg-block bg-light p-0\"\u003E         \u003Cdiv class=\"md-image\"\u003E \u003Cimg class=\"group-image\" alt=\"\"\u003E \u003C\/div\u003E       \u003C\/div\u003E     \u003C\/div\u003E   \u003C\/div\u003E \u003C\/section\u003E", "max_articles": 30, "image_type": "src", "created_at": "2022-04-05T18:01:25.000000Z", "updated_at": "2022-04-23T06:11:56.000000Z" }, { "id": 30, "status": 2, "biz_status": 2, "title": "List Style", "tree": 1, "body": "\u003Csection class=\"headline\"\u003E   \u003Cdiv class=\"container\"\u003E     \u003Cdiv class=\"row\"\u003E       \u003Cdiv class=\"col-lg-6 d-none d-lg-block bg-light p-0\"\u003E         \u003Cdiv class=\"md-image\"\u003E \u003Cimg class=\"group-image\" alt=\"\"\u003E \u003C\/div\u003E       \u003C\/div\u003E       \u003Cdiv class=\"col-lg-6 col-md-12 bg-dark px-4 py-5 p-lg-5 text-white\"\u003E         \u003Cdiv class=\"h-100\"\u003E           \u003Cdiv class=\"text-start p-0 group-content\"\u003E \u003C\/div\u003E           \u003Cdiv class=\"row row-cols-sm-1 row-cols-md-2 mt-3 g-3 group-contents\"\u003E \u003C\/div\u003E         \u003C\/div\u003E       \u003C\/div\u003E     \u003C\/div\u003E   \u003C\/div\u003E \u003C\/section\u003E", "max_articles": 30, "image_type": "src", "created_at": "2022-04-06T06:29:25.000000Z", "updated_at": "2022-04-06T13:43:08.000000Z" }, { "id": 32, "status": 2, "biz_status": 2, "title": "Carousel Flickity Gallery", "tree": 1, "body": "\u003Csection class=\"headline\"\u003E   \u003Cdiv class=\"container\"\u003E     \u003Cdiv class=\"row mb-5\" data-aos-once=\"true\" data-aos=\"fade-up\"\u003E       \u003Cdiv class=\"col-md-12 text-start\"\u003E         \u003Cdiv class=\"text-muted pb-2 group-content\"\u003E \u003C\/div\u003E       \u003C\/div\u003E     \u003C\/div\u003E     \u003Cdiv class=\"carousel-flickity group-contents flickity-container\" data-flickity='{\"imagesLoaded\":true,\"percentPosition\":false,\"autoPlay\":true,\"wrapAround\":true}'\u003E \u003C\/div\u003E   \u003C\/div\u003E \u003C\/section\u003E", "max_articles": 30, "image_type": "src", "created_at": "2022-04-06T11:44:18.000000Z", "updated_at": "2022-04-07T11:59:54.000000Z" }, { "id": 34, "status": 2, "biz_status": 2, "title": "Card Dark", "tree": 1, "body": "\u003Csection class=\"headline p-0 bg-dark\"\u003E   \u003Cdiv class=\"container\"\u003E     \u003Cdiv class=\"bg-dark rounded py-3 text-white\"\u003E       \u003Cdiv class=\"row group-contents \"\u003E \u003C\/div\u003E     \u003C\/div\u003E   \u003C\/div\u003E \u003C\/section\u003E", "max_articles": 1, "image_type": "src", "created_at": "2022-04-06T13:17:35.000000Z", "updated_at": "2022-04-09T10:33:33.000000Z" }, { "id": 36, "status": 2, "biz_status": 2, "title": "Features", "tree": 1, "body": "\u003Csection class=\"headline bg-light bg-image-default\"\u003E   \u003Cdiv class=\"container\"\u003E     \u003Cdiv class=\"row justify-content-center group-container\" data-aos-once=\"true\" data-aos=\"fade-up\"\u003E       \u003Cdiv class=\"col-lg-6 col-md-8 col-sm-10 text-center\"\u003E         \u003Cdiv class=\"mb-5 pb-2 group-content\"\u003E \u003C\/div\u003E       \u003C\/div\u003E     \u003C\/div\u003E     \u003Cdiv class=\"row row-cols-1 row-cols-md-2 row-cols-lg-3 g-5 justify-content-center group-contents\"\u003E\u003C\/div\u003E     \u003Cdiv class=\"btn-detail-container d-flex justify-content-center\"\u003E \u003Ca class=\"btn btn-light btn-point me-3 btn-detail\" href=\"#\"\u003E\u003Cspan\u003EView More\u003C\/span\u003E\u003C\/a\u003E \u003C\/div\u003E   \u003C\/div\u003E \u003C\/section\u003E", "max_articles": 30, "image_type": "src", "created_at": "2022-04-07T03:49:39.000000Z", "updated_at": "2022-04-25T11:20:21.000000Z" }, { "id": 39, "status": 2, "biz_status": 2, "title": "Team", "tree": 1, "body": "\u003Csection class=\"headline\"\u003E   \u003Cdiv class=\"container\"\u003E     \u003Cdiv class=\"row\"\u003E       \u003Cdiv class=\"col-md-6 align-self-center mb-md-0 mb-5\"\u003E         \u003Cdiv class=\"group-content\"\u003E\u003C\/div\u003E         \u003Cdiv class=\" py-3\"\u003E           \u003Ca class=\"btn btn-primary btn-point\" href=\"\"\u003E\u003Cspan\u003EApply now!\u003C\/span\u003E\u003C\/a\u003E         \u003C\/div\u003E       \u003C\/div\u003E       \u003Cdiv class=\"col-md-6 align-self-center \"\u003E         \u003Cdiv class=\"carousel-team group-contents flickity-container\" data-flickity='{ \"groupCells\": true,\"autoPlay\": true,\"wrapAround\": true,\"prevNextButtons\": false,\"pageDots\": false}'\u003E \u003C\/div\u003E       \u003C\/div\u003E     \u003C\/div\u003E   \u003C\/div\u003E \u003C\/section\u003E", "max_articles": 30, "image_type": "src", "created_at": "2022-04-07T11:13:11.000000Z", "updated_at": "2022-04-09T05:59:21.000000Z" }, { "id": 41, "status": 2, "biz_status": 2, "title": "Clients", "tree": 1, "body": "\u003Csection class=\"headline bg-light\"\u003E   \u003Cdiv class=\"container\"\u003E     \u003Cdiv class=\"row text-center\"\u003E       \u003Cdiv class=\"col-md-8 mx-auto group-content mb-5\"\u003E        \u003C\/div\u003E     \u003C\/div\u003E     \u003Cdiv class=\"row text-center justify-content-center group-contents\"\u003E     \u003C\/div\u003E   \u003C\/div\u003E \u003C\/section\u003E", "max_articles": 50, "image_type": "src", "created_at": "2022-04-08T05:24:35.000000Z", "updated_at": "2022-04-09T05:56:15.000000Z" }, { "id": 43, "status": 2, "biz_status": 2, "title": "Process", "tree": 1, "body": "\u003Csection class=\"headline bg-light bg-image-default\"\u003E   \u003Cdiv class=\"container\"\u003E     \u003Cdiv class=\"row justify-content-center mb-5\" data-aos-once=\"true\" data-aos=\"fade-up\"\u003E       \u003Cdiv class=\"col text-start\"\u003E         \u003Cdiv class=\"text-muted pb-2 group-content\"\u003E \u003C\/div\u003E       \u003C\/div\u003E     \u003C\/div\u003E     \u003Cul class=\"step step-sm step-icon-lg step-centered mb-10 group-contents\"\u003E \u003C\/ul\u003E   \u003C\/div\u003E \u003C\/section\u003E", "max_articles": 30, "image_type": "src", "created_at": "2022-04-08T11:34:28.000000Z", "updated_at": "2022-04-08T16:32:28.000000Z" }] };
+            let themes = { "success": null, "code": null, "message": null, "errorMessage": null, "error": null, "data": null, "list": [{ "id": 9, "status": 2, "biz_status": 2, "title": "quote", "tree": 2, "body": "\u003Cdiv class=\"th-overlap-wrapper\"\u003E \u003Cdiv class=\"bg-image\"\u003E\u003C\/div\u003E\u003Cdiv class=\"card card-body quote shadow theme-content\"\u003E\u003C\/div\u003E\u003C\/div\u003E", "max_articles": 1, "image_type": "background-image", "created_at": "2022-03-03T21:58:54.000000Z", "updated_at": "2022-03-03T15:59:52.000000Z", "pivot": { "fk_ptheme_id": 10, "fk_ctheme_id": 9 } }, { "id": 4, "status": 2, "biz_status": 2, "title": "image_card", "tree": 2, "body": "\u003Cdiv class=\"th-image-card fadeshow fadeshow-transition\"\u003E \u003Cdiv class=\"card bg-cover overlay overlay-gradient-dark-end overlay-60 text-white mb-6 article bg-image\"\u003E   \u003Cdiv class=\"row gx-0 justify-content-end\" style=\"z-index: 1\"\u003E     \u003Cdiv class=\"col-12 col-md-6\"\u003E       \u003Cdiv class=\"theme-content card-body py-5\"\u003E\u003C\/div\u003E     \u003C\/div\u003E   \u003C\/div\u003E \u003C\/div\u003E \u003C\/div\u003E", "max_articles": 1, "image_type": "background-image", "created_at": "2022-03-02T15:47:41.000000Z", "updated_at": "2022-03-15T15:03:15.000000Z", "pivot": { "fk_ptheme_id": 10, "fk_ctheme_id": 4 } }, { "id": 1, "status": 2, "biz_status": 2, "title": "clean", "tree": 2, "body": "\u003Cdiv class=\"article bg-transparent\"\u003E     \u003Cdiv class=\"theme-content\"\u003E\u003C\/div\u003E \u003C\/div\u003E", "max_articles": 1, "image_type": "src", "created_at": "2022-03-02T15:47:41.000000Z", "updated_at": "2022-03-30T07:23:35.000000Z", "pivot": { "fk_ptheme_id": 10, "fk_ctheme_id": 1 } }, { "id": 2, "status": 2, "biz_status": 2, "title": "image_left", "tree": 2, "body": "\u003Cdiv class=\"article bg-transparent col-12 shadow-none\"\u003E   \u003Cdiv class=\"row g-0\"\u003E     \u003Cdiv class=\"col-sm-12 col-md-6 text-center\" data-aos-once=\"true\" data-aos=\"fade-right\"\u003E       \u003Cdiv class=\"md-image py-2\"\u003E\u003Cimg class=\"rounded\"\u003E\u003C\/div\u003E     \u003C\/div\u003E     \u003Cdiv class=\"col-sm col-md-6 align-self-center\" data-aos-once=\"true\" data-aos=\"fade-left\"\u003E       \u003Cdiv class=\"theme-content card-body px-sm-0 px-md-3 px-lg-5 \"\u003E\u003C\/div\u003E       \u003Cdiv class=\"px-sm-0 px-md-3 px-lg-5 d-flex\"\u003E \u003Ca class=\"btn btn-light btn-point btn-detail\"\u003E\u003Cspan\u003EView More\u003C\/span\u003E\u003C\/a\u003E \u003C\/div\u003E     \u003C\/div\u003E   \u003C\/div\u003E \u003C\/div\u003E", "max_articles": 30, "image_type": "src", "created_at": "2022-03-02T15:47:41.000000Z", "updated_at": "2022-03-30T07:22:37.000000Z", "pivot": { "fk_ptheme_id": 10, "fk_ctheme_id": 2 } }, { "id": 3, "status": 2, "biz_status": 2, "title": "image_right", "tree": 2, "body": "\u003Cdiv class=\"article bg-transparent col-12 shadow-none\"\u003E   \u003Cdiv class=\"row g-0\"\u003E     \u003Cdiv class=\"col-sm col-md-6 align-self-center\" data-aos-once=\"true\" data-aos=\"fade-right\"\u003E       \u003Cdiv class=\"theme-content card-body  px-sm-0 px-md-3 px-lg-5\"\u003E\u003C\/div\u003E       \u003Cdiv class=\"d-flex card-body\"\u003E \u003Ca class=\"btn btn-light btn-point btn-detail\"\u003E \u003Cspan\u003EView More\u003C\/span\u003E \u003C\/a\u003E \u003C\/div\u003E     \u003C\/div\u003E     \u003Cdiv class=\"col-sm-12 col-md-6 text-center\" data-aos-once=\"true\" data-aos=\"fade-left\"\u003E       \u003Cdiv class=\"md-image py-2\"\u003E \u003Cimg class=\"rounded\" alt=\"...\"\u003E \u003C\/div\u003E     \u003C\/div\u003E   \u003C\/div\u003E \u003C\/div\u003E", "max_articles": 30, "image_type": "src", "created_at": "2022-03-02T15:47:41.000000Z", "updated_at": "2022-04-02T06:59:25.000000Z", "pivot": { "fk_ptheme_id": 10, "fk_ctheme_id": 3 } }] };
+            let articleid = null;
+            let pageType = "group_detail";
+
+            //-UI CONTROLS----------------------------------------------------
+            let image = document.getElementById('image');
+            let groupImage = document.getElementById('group_image');
+            let dtlImage = document.getElementById('detail-image');
+            let form = document.getElementById('myForm');
+            let articleCollapse = new bootstrap.Collapse(document.getElementById('articles-collapse'), {
+                toggle: false
+            });
+            //-UI CONTROLS----------------------------------------------------END
+
+            //-JS CONTROLS----------------------------------------------------
+            let quillGroupHighlight, quillArticleDetail, quillArticleBody;
+            let _themes = new Map();
+            //-JS CONTROLS----------------------------------------------------END
+
+
+            //-EVENT LISTENER----------------------------------------------------
+            try {
+                $('#theme').change(changeTheme);
+                $('#types').change(changeType);
+                $('#myForm').submit(formSubmit);
+                $('#types').change(identifyType);
+                $('#group_theme').change(function () {
+                    getThemes().then(e => {
+                        prepareThemes(e);
+                    })
+                })
+                $('input[name=show_all]').change(function () {
+                    showAllSubheading();
+                })
+                $('#refresh-btn').click(e => {
+                    applyTheme()
+                });
+                if (image) {
+                    image.addEventListener('change', e => {
+                        readImage(e, insertImage, '.article-profile');
+                    });
+                }
+                if (dtlImage) {
+                    dtlImage.addEventListener('change', e => {
+                        readImage(e, insertImage, '.article-detail-profile');
+                    });
+                }
+                if (groupImage) {
+                    groupImage.addEventListener('change', e => {
+                        readImage(e, insertImage, '.group-profile');
+                    });
+                }
+                let listTab = document.querySelectorAll('a[data-bs-toggle="list"]');
+                listTab.forEach(t => {
+                    t.addEventListener('shown.bs.tab', e => {
+                        if (e.target.id == 'group-tab') {
+                            articleCollapse.hide();
+                        } else {
+                            articleCollapse.show();
+                        }
+                    });
+                });
+
+            } catch (e) {
+                console.log("UNABLE TO ADD LISTENER [" + e + "]");
+            }
+
+            //-EVENT LISTENER END----------------------------------------------------
+
+            quillInit();
+            initData();
+            initSortable();
+            //getThemes();
+
+            function identifyType() {
+                $('.json-message').empty();
+                $('input[name=submit]').removeClass('disabled');
+                let d = $("#types option:selected").val();
+                Net.get('/api/group/type/identify', {
+                    type_id: d,
+                    group_id: group.data?.id
+                }).then(result => {
+                    if (result.success && result.data) {
+                        let message = $("#types option:selected").text() + " page is already link.";
+                        if (group.data) {
+                            Utility.alert(message, document.querySelector('.json-message'), true, [
+                                `<a href='/admin/headline/${d}' class="ms-2">Go to ${$("#types option:selected").text()} page</a>`
+                            ]);
+                            $('input[name=submit]').addClass('disabled');
+                            $('.json-message .btn-close').click(() => {
+                                //alert('hello')
+                            })
+                        } else {
+                            Utility.alert(message + ' your data will be replaced.',
+                                document.querySelector('.json-message'), true)
+                        }
+
+
+                    }
+                });
+                controlNavBarStatus();
+                controlPaginationStatus();
+            }
+
+            function controlPaginationStatus() {
+                if (!$("#types option:selected").attr('data-allow-pagination')) {
+                    $('input[name=show_all]').prop('checked', true);
+                    $('.show-all-group').addClass('disabled');
+                } else {
+                    $('.show-all-group').removeClass('disabled');
+                    //$('input[name=show_all]').prop('checked', false);
+                    //$("input[name=max_items][value=" + 3 + "]").prop('checked', true);
+                }
+                showAllSubheading();
+            }
+
+            function controlNavBarStatus() {
+                if ($("#types option:selected").attr('data-isunique')) {
+                    $('input[name=group_on_navbar]').prop("checked", true);
+                    $('input[name=group_on_navbar]').closest('.form-check').addClass("disabled");
+                } else {
+                    $('input[name=group_on_navbar]').closest('.form-check').removeClass("disabled");
+                }
+            }
+
+            function initData() {
+
+                if (window.location.hash) {
+                    let activeTab = new bootstrap.Tab(document.querySelector(window.location.hash));
+                    activeTab.show();
+                }
+                if (group.data) {
+                    $("#types").val(group.data.fk_type_id);
+                    $('input[name=show_all]').prop('checked', group.data.show_all);
+                    $("input[name=max_items][value=" + group.data.max_items + "]").prop('checked', true);
+                    insertImage(group.data.image_url, '.group-profile');
+
+                    getThemes(group.data.fk_type_id).then(e => {
+                        prepareThemes(e, article.data?.fk_theme_id);
+                        applyTheme(group.data.fk_theme_id);
+                        checkNewArticleButton();
+                    });
+                    quillGroupHighlight.setContents(JSON.parse(group.data.highlight));
+
+                    if (article.data) {
+                        $('input[name=btn_detail]').prop('checked', article.data.btn_detail);
+                        if (quillArticleDetail)
+                            quillArticleDetail.setContents(JSON.parse(article.data.detail));
+                        if (quillArticleBody)
+                            quillArticleBody.setContents(JSON.parse(article.data.body));
+                        insertImage(article.data.image_url, '.article-profile');
+                        insertImage(article.data.detail_image_url, '.article-detail-profile');
+                    }
+                    decideQuillByType(
+                        $("#types option:selected").attr('data-allow-detail') == 1,
+                        $("#types option:selected").attr('data-allow-body') == 1
+                    );
+                    $('input[name=group_on_navbar]').prop('checked', group.data.on_navbar);
+                    $('input[name=group_on_home]').prop('checked', group.data.on_home);
+                    $('input[name=group_dropdown_on_navbar]').prop('checked', group.data.dropdown_on_navbar);
+
+                    controlNavBarStatus();
+                    controlPaginationStatus();
+
+                }
+                if (!$('#theme option:selected')) {
+                    $('.preview').addClass('d-none');
+                }
+                showAllSubheading();
+            }
+
+            function showAllSubheading() {
+                if ($('input[name=show_all]:checked').val()) {
+                    $('.max-items').addClass('d-none');
+                } else {
+                    $('.max-items').removeClass('d-none');
+                }
+            }
+
+            function quillInit() {
+                const groupHighlightDiv = document.querySelector('#group_highlight');
+                const articleHighlightDiv = document.querySelector('#article_detail');
+                const articleBodyDiv = document.querySelector('#article_body');
+                if (groupHighlightDiv)
+                    quillGroupHighlight = new Quill(groupHighlightDiv, Utility.quillModules);
+                if (articleHighlightDiv)
+                    quillArticleDetail = new Quill(articleHighlightDiv, Utility.quillModules);
+                if (articleBodyDiv)
+                    quillArticleBody = new Quill(articleBodyDiv, Utility.quillModules);
+                let qltoolbar = document.querySelectorAll('.ql-toolbar');
+                $('.ql-toolbar').each(function () {
+                    $(this).addClass('bg-white shadow-sm rounded border-0');
+                })
+            }
+
+            function initSortable() {
+                if ($('#sortable-articles-list').attr('data-sortable') == 0) {
+                    return;
+                }
+                Sortable.create(document.querySelector('#sortable-articles-list'), {
+                    handle: '.list-group-item',
+                    animation: 150,
+                    onEnd: function ( /**Event*/ evt) { },
+                });
+            }
+
+            function changeTheme(event) {
+                showThemeDetail({
+                    title: $("#theme option:selected").text(),
+                    max_articles: $("#theme option:selected").attr('data-maxarticle')
+                });
+                applyTheme();
+                checkNewArticleButton();
+            }
+
+            function changeType(event) {
+                const allowHighlight = $("#types option:selected").attr('data-allow-detail') == 1;
+                const allowBody = $("#types option:selected").attr('data-allow-body') == 1;
+                decideQuillByType(allowHighlight, allowBody);
+            }
+
+            function showThemeDetail(theme) {
+                let detail =
+                    `
+                <div class="card bg-light">
+                    <div class="card-body">
+                        <dl>
+                            <dt>Title</dt>
+                            <dd>${theme.title}.</dd>
+                            <dt>Max blocks</dt>
+                            <dd>${theme.max_articles}.</dd>
+                        </dl>
+                    </div>
+                </div>
+                `;
+                $('#theme-detail').html(detail);
+
+            }
+
+            function applyTheme() {
+
+                let myGroup = {
+                    title: $('#group_title').val(),
+                    highlight: quillGroupHighlight.getContents(),
+                    image_url: $('.group-profile img.dz-preview-img').attr('src'),
+                }
+                let myType = types.list.find(e => e.id == $("#types option:selected").val());
+                let myGroupTheme = groupThemes.list.find(e => e.id == $("#group_theme option:selected").val());
+                let myTheme = themes.list.find(e => e.id == $("#theme option:selected").val());
+
+                let article = {
+                    title: $('input[name=article_title]').val(),
+                    theme: themes.list.find(e => e.id == $("#theme option:selected").val()),
+                    image_url: $('.article-profile img.dz-preview-img').attr('src'),
+                    body: quillArticleBody?.getContents()
+                }
+                let myArticles;
+                if (articleid && group.data) {
+                    const index = group.data.articles.findIndex(e => e.id == articleid);
+                    if (index != -1) {
+                        article.id = parseInt(articleid);
+                        group.data.articles[index] = article;
+                    }
+                    myArticles = group.data.articles;
+                } else if (window.location.href.indexOf("article") > -1) {
+                    myArticles = [article];
+                } else {
+                    myArticles = group.data ? group.data.articles : [article];
+                }
+                let builder = ThemeBuilder.export(new Theme(myGroup, myType, myGroupTheme, myArticles));
+                $('.active-theme').empty();
+                //console.log($(builder.export()).html());
+                $('.active-theme').append(builder);
+                //document.getElementById('preview').scrollIntoView();
+
+                /* Flickity Carousel */
+
+                const flickity = document.querySelector('.flickity-container');
+                if (flickity) new Flickity(flickity, JSON.parse($('.flickity-container').attr('data-flickity')));
+            }
+
+            function checkNewArticleButton() {
+                const articlesLen = group.data ? group.data.articles.length : 0;
+                const max = parseInt($("#group_theme option:selected").attr('data-maxarticle'));
+                if (articlesLen < max) {
+                    $('#new-article-btn').removeClass('d-none');
+                } else {
+                    $('#new-article-btn').addClass('d-none');
+                }
+            }
+
+            function decideQuillByType(allowHighlight, allowBody) {
+                if (allowHighlight) {
+                    $('#article_detail_container').removeClass('d-none');
+                } else {
+                    $('#article_detail_container').addClass('d-none');
+                }
+                if (allowBody) {
+                    $('#article_body_container').removeClass('d-none');
+                } else {
+                    $('#article_body_container').addClass('d-none');
+                }
+            }
+
+            function getThemes() {
+                return new Promise((res, rej) => {
+                    // Net.get(`/api/theme/parent/${$('#group_theme option:selected').val()}/children`).then(
+                    //     e => {
+                    //         if (e.success) {
+                    //             res(e.list);
+                    //         } else {
+                    //             rej();
+                    //         }
+                    //     })
+                    rej();
+                });
+            }
+
+            function prepareThemes(list, id = null) {
+                $("#theme").empty();
+                $('#theme').append(` <option value="-1" selected>select..</option>`)
+                for (let theme of list) {
+                    $('#theme').append(
+                        ` <option value="${theme.id}" data-maxarticle="${theme.max_articles}" ${theme.id == id ? 'selected' : ''}>${theme.title}</option>`
+                    )
+                };
+            }
+
+            function insertImage(base64, className) {
+                let imageContainer = document.createElement('div');
+                imageContainer.classList.add('dz-preview-cover', 'dz-processing', 'dz-image-preview');
+                imageContainer.innerHTML = `
+                        <img class="dz-preview-img" src="${base64}" onerror="errorOnloadImage(this,'${className}')">
+                `;
+                let preview = document.querySelector(`${className} .dz-preview`);
+                preview.innerHTML = "";
+                preview.appendChild(imageContainer);
+                document.querySelector(`${className}`).classList.add('dz-max-files-reached');
+            }
+
+            function readImage(e, output, className) {
+                const input = e.srcElement;
+                let base64;
+                for (let f of input.files) {
+                    let reader = new FileReader();
+                    reader.onload = (e) => {
+                        base64 = e.target.result;
+                        //input.value = null;
+                        output(base64, className);
+                    };
+                    reader.readAsDataURL(f);
+                }
+            }
+
+            function formSubmit(event) {
+                document.querySelector('input[name=group_highlight]').value = JSON.stringify(
+                    quillGroupHighlight
+                        .getContents());
+                document.querySelector('input[name=article_detail]').value = JSON.stringify(
+                    quillArticleDetail
+                        .getContents());
+                document.querySelector('input[name=article_body]').value = JSON.stringify(quillArticleBody
+                    .getContents());
+            }
+
+            function redirect(event) {
+                if (event.target.id == 'group-tab') {
+                    //window.location.replace("http://stackoverflow.com");
+                    articleCollapse.hide();
+
+                }
+            }
+
+        });
+
+        function errorOnloadImage(e, className) {
+            $(className).removeClass('dz-max-files-reached');
+            $($(className).find('.dz-preview-cover')).remove();
+        }
+    </script>
+</body>
+
+</html>

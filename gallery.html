@@ -1,0 +1,204 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CSRF Token -->
+    <meta name="csrf-token" content="OOIv20o6fblIkvhlhXQ5Mdcihe7hOCmbGWw7AVtO">
+
+    <title>Laravel</title>
+
+    <!-- Scripts -->
+    <script src="js/app.js" defer></script>
+
+    <!-- Fonts -->
+    <link rel="dns-prefetch" href="//fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+
+    <!-- Styles -->
+    <link href="css/app.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <style>
+        .header.header-transparent {
+            background-color: rgba(22, 28, 45, 0.9);
+        }
+    </style>
+    <header class="header-outer header header-transparent">
+        <div class="container">
+            <nav class="header-inner">
+                <div class="header-navigation-left d-flex justify-content-center w-sm-100 w-md-auto">
+                    <button class="btn btn-link d-md-none  btn-offcanvas-dismiss" type="button"
+                        data-bs-toggle="offcanvas" data-bs-target="#offcanvas" aria-expanded="false">
+                        <i class="bi bi-list fs-2"></i>
+                    </button>
+                    <a class="header-logo" href="index.html">
+                        <img id="brand-logo" src="storage/images/9q7bg5VidEvwHLdGDYlOBZX1Xy8ARNgrRFHSP8Oi.png"
+                            onerror="document.getElementById('brand-logo').src = 'storage/essential/err_logo.png' " />
+                    </a>
+                </div>
+                <div class="header-navigation offcanvas offcanvas-start" id="offcanvas">
+                    <div class="offcanvas-header d-md-none justify-content-end">
+                        <button type="button" class="btn " data-bs-dismiss="offcanvas" style="color: white"
+                            aria-label="Close">
+                            <i class="bi bi-x-lg fs-2"></i>
+
+                        </button>
+                    </div>
+                    <a href="index.html" class="header-item text-capitalize">Home</a>
+                    <a href="about.html" class="header-item text-capitalize">About Us</a>
+                    <a href="services.html" class="header-item text-capitalize">Services</a>
+                    <a href="gallery.html" class="header-item text-capitalize">Gallery</a>
+                    <a href="contact.html" class="header-item text-capitalize">Contact Us</a>
+                    <div class="dropdown header-item">
+                        <!-- <a class="dropdown-toggle text-decoration-none" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false" v-pre>
+                            admin
+                        </a> -->
+
+                        <div class="dropdown-menu dropdown-menu-end dropdown-menu-dark"
+                            aria-labelledby="navbarDropdown">
+
+                            <a class="dropdown-item" href="admin">Dashboard</a>
+
+                            <a class="dropdown-item" href="logout"
+                                onclick="event.preventDefault();document.getElementById('logout-form').submit();">
+                                Logout
+                            </a>
+
+                            <form id="logout-form" action="logout" method="POST" class="d-none">
+                                <input type="hidden" name="_token" value="OOIv20o6fblIkvhlhXQ5Mdcihe7hOCmbGWw7AVtO">
+                            </form>
+                        </div>
+                    </div>
+
+
+                </div>
+
+            </nav>
+
+        </div>
+    </header>
+    <main>
+        <div style="position: relative">
+            <div class="jarallax bg-gradient pt-5 pb-6 pt-md-7">
+                <img class="jarallax-img" src="storage/essential/contact_us_bgcover.jpg">
+                <span class="position-absolute top-0 start-0 w-100 h-100"
+                    style="background-image: linear-gradient(to right, #1b2a4e 0%, #1b2a4e 30%, #1b2a4e 100%); opacity:0.8"></span>
+                <section>
+                    <div class="wave wave1"></div>
+                    <div class="wave wave2"></div>
+                    <div class="wave wave3"></div>
+                    <div class="wave wave4"></div>
+                </section>
+                <div class="container position-relative pt-6">
+                    <div class="row justify-content-center">
+                        <div class="col text-light">
+                            <h1 class="mb-4">Gallery</h1>
+                            <p>Our blog shows our hard work and devotion to helping our clients succeed. Don&#039;t just
+                                take our word for it. Check out the latest work.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="headlines mn-vh-100"></div>
+    </main>
+    <footer class="footer text-white py-5">
+        <div class="container ">
+            <div class="row g-3">
+                <div class="col-sm-12 col-md-6 col-lg-4">
+                    <div class="d-table-cell text-left small">
+                        <h5 class="mb-4 fw-bold">Daniel Matthew</h5>
+                        <ul class="list-unstyled">
+
+                            <li class="mb-3 d-flex justify-content-start gap-3">
+                                <i class="bi bi-geo-alt-fill"></i>
+
+                                <div class="ms-2">
+                                    <span>Robert Robertson, 1234 NW Bobcat Lane, St. Robert, MO 65584-5678.</span>
+                                </div>
+                            </li>
+
+                            <li class="mb-3 d-flex justify-content-start gap-3">
+                                <i class="bi bi-telephone-fill"></i>
+                                <div class="ms-2">
+                                    <a href="tel:09 799887722" class="text-decoration-none text-white">09 799887722</a>
+                                    <span class="d-block text-muted text-small">Sun - Sat</span>
+                                    <span class="d-block text-muted text-small">9:30 am - 6:15 pm</span>
+                                </div>
+                            </li>
+
+                            <li class="mb-3 d-flex justify-content-start gap-3">
+                                <i class="bi bi-envelope-fill"></i>
+                                <div class="ms-2">
+                                    <a class="text-decoration-none text-white"
+                                        href="mailto:matthew@coolstuff.com">matthew@coolstuff.com</a>
+                                </div>
+                            </li>
+
+                            <li class="mb-3 d-flex justify-content-start gap-3 fs-5 ">
+                                <a class="bi bi-linkedin text-white text-decoration-none" href="#"></a>
+                                <a class="bi bi-facebook text-white text-decoration-none" href="#"></a>
+                                <a class="bi bi-instagram text-white text-decoration-none" href="#"></a>
+
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-4">
+                    <div class="quick-link">
+                        <h6>Quick LInks</h6>
+                        <ul class="nav flex-column px-0">
+                            <li class="nav-item "><a class="nav-link text-decoration-none small py-1 text-white"
+                                    href="index.html">Home</a></li>
+                            <li class="nav-item "><a class="nav-link text-decoration-none small py-1 text-white"
+                                    href="about.html">About Us</a></li>
+                            <li class="nav-item "><a class="nav-link text-decoration-none small py-1 text-white"
+                                    href="services.html">Services</a>
+                            </li>
+                            <li class="nav-item "><a class="nav-link text-decoration-none small py-1 text-white"
+                                    href="gallery.html">Gallery</a>
+                            </li>
+                            <li class="nav-item "><a class="nav-link text-decoration-none small py-1 text-white"
+                                    href="contact.html">Contact Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-lg-4">
+                    <div class="bg-transparent ps-lg-5">
+                        <div class="h6 mb-3">Subscribe to our newsletter to receive exclusive offers.</div>
+                        <div class="">
+                            <input type="text" class="form-control mb-3">
+                            <button class="btn btn-primary">Submit</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="row justify-content-start">
+                <div class="col col-md-auto">
+                    <small class="text-muted">Copyright &copy;
+                        <script>document.write(new Date().getFullYear());</script> All Rights Reserved by <strong><a
+                                href="/" class="text-decoration-none text-muted">Daniel Matthew</a></strong>
+                    </small>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script type="text/javascript">
+        let group = [{ "id": 9, "status": 2, "biz_status": 2, "order": 13, "title": "Gallery", "has_title": true, "highlight": "{\"ops\":[{\"insert\":\"Our Projects\"},{\"attributes\":{\"align\":\"center\",\"header\":2},\"insert\":\"\\n\"},{\"attributes\":{\"color\":\"#8f9397\"},\"insert\":\"By in no ecstatic wondered disposal my speaking. Direct wholly valley or uneasy it at really. Sir wish like said dull and need make. \"},{\"attributes\":{\"align\":\"center\"},\"insert\":\"\\n\"},{\"attributes\":{\"color\":\"#8f9397\"},\"insert\":\"Sportsman one bed departure rapturous situation disposing his.\"},{\"attributes\":{\"align\":\"center\"},\"insert\":\"\\n\"}]}", "fk_group_theme_id": 32, "fk_type_id": 2, "on_navbar": true, "on_home": false, "dropdown_on_navbar": false, "show_all": true, "max_items": 0, "image_url": null, "created_at": "2022-04-06T11:46:46.000000Z", "updated_at": "2022-08-02T15:19:27.000000Z", "html": null, "articlesCount": 4, "articles": [{ "id": 26, "status": 2, "biz_status": 2, "title": "project 1", "has_title": true, "detail": "{\"ops\":[{\"insert\":\"\\n\"}]}", "body": "{\"ops\":[{\"insert\":\"\\n\"}]}", "image_url": "storage\/images\/HkA70eSKgamLmZzlNFQxAusJgLNQDH3DOAuBnJ3P.jpg", "fk_group_id": 9, "fk_theme_id": 33, "detail_title": null, "detail_image_url": null, "order": 1, "btn_detail": false, "created_at": "2022-04-06T11:46:46.000000Z", "updated_at": "2022-08-02T15:18:43.000000Z", "theme": { "id": 33, "status": 2, "biz_status": 2, "title": "Flickity Carousel Items", "tree": 2, "body": "\u003Cimg class=\"carousel-flickity-item\" alt=\"\" \/\u003E", "max_articles": 1, "image_type": "src", "created_at": "2022-04-06T11:45:04.000000Z", "updated_at": "2022-04-06T12:51:19.000000Z" } }, { "id": 27, "status": 2, "biz_status": 2, "title": "project 2", "has_title": true, "detail": "{\"ops\":[{\"insert\":\"\\n\"}]}", "body": "{\"ops\":[{\"insert\":\"\\n\"}]}", "image_url": "storage\/images\/qw8nri2PVG6eEtU3PutOYOvLiwfP8lOZcls9nH3f.jpg", "fk_group_id": 9, "fk_theme_id": 33, "detail_title": null, "detail_image_url": null, "order": 2, "btn_detail": false, "created_at": "2022-04-06T12:44:19.000000Z", "updated_at": "2022-08-02T15:18:57.000000Z", "theme": { "id": 33, "status": 2, "biz_status": 2, "title": "Flickity Carousel Items", "tree": 2, "body": "\u003Cimg class=\"carousel-flickity-item\" alt=\"\" \/\u003E", "max_articles": 1, "image_type": "src", "created_at": "2022-04-06T11:45:04.000000Z", "updated_at": "2022-04-06T12:51:19.000000Z" } }, { "id": 28, "status": 2, "biz_status": 2, "title": "proj 3", "has_title": true, "detail": "{\"ops\":[{\"insert\":\"\\n\"}]}", "body": "{\"ops\":[{\"insert\":\"\\n\"}]}", "image_url": "storage\/images\/42SpOXsBqaW0erPbWFgKJVDEHXmx8d0NziONNtEH.jpg", "fk_group_id": 9, "fk_theme_id": 33, "detail_title": null, "detail_image_url": null, "order": 3, "btn_detail": false, "created_at": "2022-04-06T12:44:40.000000Z", "updated_at": "2022-08-02T15:19:10.000000Z", "theme": { "id": 33, "status": 2, "biz_status": 2, "title": "Flickity Carousel Items", "tree": 2, "body": "\u003Cimg class=\"carousel-flickity-item\" alt=\"\" \/\u003E", "max_articles": 1, "image_type": "src", "created_at": "2022-04-06T11:45:04.000000Z", "updated_at": "2022-04-06T12:51:19.000000Z" } }, { "id": 30, "status": 2, "biz_status": 2, "title": "proj 4", "has_title": true, "detail": "{\"ops\":[{\"insert\":\"\\n\"}]}", "body": "{\"ops\":[{\"insert\":\"\\n\"}]}", "image_url": "storage\/images\/a4pENIm5enPJF7C5ScyqdpCnHN0ApDU3we9nwxOm.jpg", "fk_group_id": 9, "fk_theme_id": 33, "detail_title": null, "detail_image_url": null, "order": 4, "btn_detail": false, "created_at": "2022-04-06T13:47:29.000000Z", "updated_at": "2022-08-02T15:19:27.000000Z", "theme": { "id": 33, "status": 2, "biz_status": 2, "title": "Flickity Carousel Items", "tree": 2, "body": "\u003Cimg class=\"carousel-flickity-item\" alt=\"\" \/\u003E", "max_articles": 1, "image_type": "src", "created_at": "2022-04-06T11:45:04.000000Z", "updated_at": "2022-04-06T12:51:19.000000Z" } }], "type": { "id": 2, "status": 2, "biz_status": 2, "code": "gallery", "title": "Gallery", "allow_detail": true, "allow_body": true, "is_unique": false, "allow_pagination": true, "created_at": "2022-03-30T09:02:58.000000Z", "updated_at": "2022-04-09T10:28:18.000000Z", "body": "Our blog shows our hard work and devotion to helping our clients succeed. Don't just take our word for it. Check out the latest work." }, "theme": null, "group_theme": { "id": 32, "status": 2, "biz_status": 2, "title": "Carousel Flickity Gallery", "tree": 1, "body": "\u003Csection class=\"headline\"\u003E   \u003Cdiv class=\"container\"\u003E     \u003Cdiv class=\"row mb-5\" data-aos-once=\"true\" data-aos=\"fade-up\"\u003E       \u003Cdiv class=\"col-md-12 text-start\"\u003E         \u003Cdiv class=\"text-muted pb-2 group-content\"\u003E \u003C\/div\u003E       \u003C\/div\u003E     \u003C\/div\u003E     \u003Cdiv class=\"carousel-flickity group-contents flickity-container\" data-flickity='{\"imagesLoaded\":true,\"percentPosition\":false,\"autoPlay\":true,\"wrapAround\":true}'\u003E \u003C\/div\u003E   \u003C\/div\u003E \u003C\/section\u003E", "max_articles": 30, "image_type": "src", "created_at": "2022-04-06T11:44:18.000000Z", "updated_at": "2022-04-07T11:59:54.000000Z" } }, { "id": 11, "status": 2, "biz_status": 2, "order": 14, "title": "Projects", "has_title": false, "highlight": "{\"ops\":[{\"insert\":\"\\n\"}]}", "fk_group_theme_id": 8, "fk_type_id": 2, "on_navbar": false, "on_home": false, "dropdown_on_navbar": false, "show_all": true, "max_items": 0, "image_url": null, "created_at": "2022-04-06T13:51:35.000000Z", "updated_at": "2022-08-02T15:57:58.000000Z", "html": null, "articlesCount": 1, "articles": [{ "id": 31, "status": 2, "biz_status": 2, "title": "Projects", "has_title": true, "detail": "{\"ops\":[{\"insert\":\"\\n\"}]}", "body": "{\"ops\":[{\"insert\":\"Collaboration is the future of work, benefiting customers, employees and your bottom line. The trouble is executing it effectively. As hybrid and remote working proliferate, it\u2019s never been more important to ask: Are we collaborating effectively?\\n\\nFor business leaders, it\u2019s imperative to find the right way forward. Siloed work, detached from organizational goals, is still common.\\n\\nThe latest global research from our Organization & Culture practice offers actionable tactics to unlock the power of collaboration across all working environments through a holistic, human-centered approach.\\n\\nA focus on cross-organizational collaboration is another means to accelerate transformation. This report outlines the three phases organizations need to progress through in order to evolve their understanding of effective collaboration and drive better results.\\n\"}]}", "image_url": null, "fk_group_id": 11, "fk_theme_id": 5, "detail_title": null, "detail_image_url": null, "order": 1, "btn_detail": false, "created_at": "2022-04-06T13:51:35.000000Z", "updated_at": "2022-08-02T15:57:58.000000Z", "theme": { "id": 5, "status": 2, "biz_status": 2, "title": "pop", "tree": 2, "body": "\u003Cdiv class=\"row \"\u003E \u003Cdiv class=\"col-12 col-lg-8 mx-auto article\"\u003E \u003Cdiv class=\"theme-content\"\u003E \u003C\/div\u003E\u003C\/div\u003E\u003C\/div\u003E", "max_articles": 1, "image_type": "src", "created_at": "2022-03-02T15:47:41.000000Z", "updated_at": "2022-03-02T09:22:36.000000Z" } }], "type": { "id": 2, "status": 2, "biz_status": 2, "code": "gallery", "title": "Gallery", "allow_detail": true, "allow_body": true, "is_unique": false, "allow_pagination": true, "created_at": "2022-03-30T09:02:58.000000Z", "updated_at": "2022-04-09T10:28:18.000000Z", "body": "Our blog shows our hard work and devotion to helping our clients succeed. Don't just take our word for it. Check out the latest work." }, "theme": null, "group_theme": { "id": 8, "status": 2, "biz_status": 2, "title": "clean", "tree": 1, "body": "\u003Csection class=\"headline\"\u003E   \u003Cdiv class=\"container\"\u003E     \u003Cdiv class=\"group-contents\"\u003E\u003C\/div\u003E   \u003C\/div\u003E \u003C\/section\u003E", "max_articles": 30, "image_type": "src", "created_at": "2022-03-02T21:13:15.000000Z", "updated_at": "2022-03-27T08:08:05.000000Z" } }];
+        document.addEventListener("DOMContentLoaded", function (event) {
+            for (let g of group) {
+                $('.headlines').append(ThemeBuilder.export(new Theme(g, g.type, g.group_theme, g.articles)))
+            }
+        });
+    </script>
+</body>
+
+</html>
