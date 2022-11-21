@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CSRF Token -->
+    <meta name="csrf-token" content="EeIC3mISSIhBBf2ugQCBLELKg2F1ZHYbcOw7vVjh">
+
+    <title>Laravel</title>
+
+    <!-- Scripts -->
+    <script src="js/app.js" defer></script>
+
+    <!-- Fonts -->
+    <link rel="dns-prefetch" href="//fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+
+    <!-- Styles -->
+    <link href="css/app.css" rel="stylesheet">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand navbar-dark shadow-sm auth-navbar" style="background-color: rgba(22, 28, 45, 0.9)">
+        <div class="container">
+            <a class="my-lg-0 btn text-white " href="index.html">
+                <i class="bi bi-chevron-double-left"></i>
+                Back
+            </a>
+        </div>
+    </nav>
+    <main id="content" role="main" class="">
+        <div class="jarallax">
+            <img class="jarallax-img" src="storage/essential/contact_us_bgcover.jpg">
+            <span class="position-absolute top-0 start-0 w-100 h-100 bg-overlay"></span>
+            <div class="container position-relative">
+                <div class="row">
+                    <div class="col-lg-7 col-xl-12 d-flex justify-content-center align-items-center mn-vh-100">
+                        <div class="flex-grow-1 mx-auto py-3" style="max-width: 30rem;">
+                            <div class="card rounded-0 bg-image-default">
+                                <div class="card-body">
+                                    <div class="text-center mb-5 mb-md-7 pt-3">
+                                        <h2>Welcome back</h2>
+                                        <p>Login to manage your account.</p>
+                                    </div>
+
+                                    <form method="POST" action="#">
+                                        <input type="hidden" name="_token"
+                                            value="EeIC3mISSIhBBf2ugQCBLELKg2F1ZHYbcOw7vVjh">
+                                        <div class="mb-3">
+                                            <label class="form-label" for="email">Email Address</label>
+                                            <input type="email" class="form-control form-control-lg fs-6  " name="email"
+                                                id="email" placeholder="email@site.com" aria-label="email@site.com"
+                                                value="" required autocomplete="email" autofocus>
+                                        </div>
+
+                                        <div class="mb-3">
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <label class="form-label" for="password">Password</label>
+                                                <a class="form-label-link small text-decoration-none"
+                                                    href="password/reset">
+                                                    Forgot Your Password?
+                                                </a>
+                                            </div>
+
+                                            <div class="input-group">
+                                                <input type="password" class="form-control form-control-lg fs-6 "
+                                                    name="password" required autocomplete="current-password">
+
+                                            </div>
+
+                                        </div>
+                                        <div class="row mb-3">
+                                            <div class="col-md-6 ">
+                                                <div class="form-check ">
+                                                    <input class="form-check-input" type="checkbox" name="remember"
+                                                        id="remember">
+
+                                                    <label class="form-check-label" for="remember">
+                                                        Remember Me
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="d-grid">
+                                            <button type="submit" class="btn btn-primary btn-lg mb-3 rounded-0 fs-6">Log
+                                                in</button>
+                                        </div>
+
+                                    </form>
+                                    <div class="row">
+                                        <!-- Divider with text -->
+                                        <div class="position-relative my-4">
+                                            <hr>
+                                            <p
+                                                class="small position-absolute top-50 start-50 translate-middle bg-body px-5">
+                                                Or
+                                            </p>
+                                        </div>
+
+                                        <!-- Social btn -->
+                                        <div class="col-xxl-12 d-grid">
+                                            <a href="#"
+                                                class="btn btn-lg btn-primary mb-2 mb-xxl-0 rounded-0 fs-6">
+                                                <i class="bi bi-google text-white me-2"></i>
+                                                Login with Google</a>
+                                        </div>
+                                        <!-- Social btn -->
+
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+    </main>
+</body>
+
+</html>
